@@ -1,0 +1,62 @@
+/* this is a comment in CSS */
+
+/*
+https://www.educative.io/answers/class-and-id-selectors-in-css
+*/
+
+/*
+    Selectors: class(.) and id(#)
+    - classes are used throughout the code, id's are unqiue and only used onceish
+
+*/
+
+html{
+    font-family: system-ui, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: dimgray;
+}
+
+
+.navbar{
+    display: grid; /*want it to be grid pattern (side by side)*/
+    grid-template-columns: auto auto; /*two autos bc we want 2 columns*/
+    border-bottom: 1px solid black;
+    position: fixed;
+    top: 0;
+    width: 97%; /*width of nav bar*/
+    background-color: white;
+}
+
+.text-right{
+    text-align: right;
+}
+
+.chris-photo{
+    width: 300px;
+    length: 300px;
+}
+
+#greetings{
+    color: darkblue;
+}
+
+.major-box{
+    padding: 30px;
+    /*padding-top: 30px;*/
+    border: 1px solid black;
+    margin: 100spx;
+    background-color: cornflowerblue;
+}
+
+.grid-0{
+    display: grid; /*want it to be grid pattern (side by side)*/
+    grid-template-columns: auto auto; /*two autos bc we want 2 columns*/
+}
+
+
+.box-0{
+    padding-right: 10px; /*adding the space between the boxes*/
+}
+
+.intro{
+    text-align: center;
+}
