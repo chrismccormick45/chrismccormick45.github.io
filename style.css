@@ -12,7 +12,7 @@ https://www.educative.io/answers/class-and-id-selectors-in-css
 
 html{
     font-family: system-ui, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: dimgray;
+    background-color: lightgray;
 }
 
 
@@ -22,7 +22,7 @@ html{
     border-bottom: 1px solid black;
     position: fixed;
     top: 0;
-    width: 97%; /*width of nav bar*/
+    width: 98%; /*width of nav bar*/
     background-color: white;
 }
 
@@ -30,16 +30,19 @@ html{
     text-align: right;
 }
 
+.center{
+    align-content: center;
+}
+
 .chris-photo{
-    width: 300px;
-    length: 300px;
+    width: 200px;
 }
 
 #greetings{
     color: darkblue;
 }
 
-.major-box{
+.text-boxes{
     padding: 30px;
     /*padding-top: 30px;*/
     border: 1px solid black;
@@ -53,7 +56,7 @@ html{
 }
 
 
-.box-0{
+.box-spacing{
     padding-right: 10px; /*adding the space between the boxes*/
 }
 
