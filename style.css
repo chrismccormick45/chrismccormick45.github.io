@@ -11,55 +11,111 @@ https://www.educative.io/answers/class-and-id-selectors-in-css
 */
 
 html{
-    font-family: system-ui, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: lightgray;
+    background-image: url("https://i.pinimg.com/originals/09/01/e5/0901e529a555493ba5b58ba6579db104.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    font-family: Dubai;
+    scroll-behavior: smooth;
 }
-
 
 .navbar{
     display: grid; /*want it to be grid pattern (side by side)*/
-    grid-template-columns: auto auto; /*two autos bc we want 2 columns*/
-    border-bottom: 1px solid black;
-    position: fixed;
+    grid-template-columns: auto auto auto; /*three autos bc we want 2 columns*/
+    border-bottom: 2px solid white;
+    position: static;
     top: 0;
-    width: 98%; /*width of nav bar*/
-    background-color: white;
+    width: 100%; /*width of nav bar*/
+    background-color: transparent;
+    color: white;
 }
 
-.text-right{
-    text-align: right;
+/* <div class="navbar">
+            <div style="text-align: center; padding-top: 7px">
+                <a href="mailto:chrismccormick@g.ucla.edu">
+                    <img class="icons"
+                         src="newemail.png"
+                         alt="Email" />
+                    </img>
+                </a>
+            </div>
+
+            <div style="text-align: center;">
+                <a href="resume.pdf">
+                    <img class="icons"
+                         src="resume.png"
+                         alt="Resume" />
+                    </img>
+                </a>
+            </div>
+
+            <div style="text-align: center;">
+                <a href="https://www.linkedin.com/in/christopher-mccormick-9645b0218/">
+                    <img class="icons"
+                         src="linkedin.png"
+                         alt="LinkedIn" />
+                    </img>
+                </a>
+            </div>
+        </div> */
+
+.general-photo{
+    width: 350px;
 }
 
-.center{
-    align-content: center;
-}
-
-.chris-photo{
-    width: 200px;
-}
-
-#greetings{
-    color: darkblue;
+.icons{
+    width: 50px;
 }
 
 .text-boxes{
     padding: 30px;
     /*padding-top: 30px;*/
-    border: 1px solid black;
+    border: 1px solid white;
     margin: 100spx;
-    background-color: cornflowerblue;
 }
 
-.grid-0{
+.grid-2{
     display: grid; /*want it to be grid pattern (side by side)*/
     grid-template-columns: auto auto; /*two autos bc we want 2 columns*/
+    padding: 40px;
+}
+
+.grid-3{
+    display: grid; /*want it to be grid pattern (side by side)*/
+    grid-template-columns: auto auto auto; /*two autos bc we want 2 columns*/
+    padding: 40px;
+}
+
+.college-logos{
+    display: grid;
+    grid-template-columns: auto auto auto;
 }
 
 
 .box-spacing{
-    padding-right: 10px; /*adding the space between the boxes*/
+    padding-right: 20px; /*adding the space between the boxes*/
 }
 
 .intro{
     text-align: center;
+    text-decoration: underline;
+    color: white;
+    padding-top: 6%;
+}
+
+.sub-intro {
+    padding-bottom: 45%;
+    text-align: center;
+    color: white;
+}
+
+.headings{
+    padding-left: 40px;
+    text-decoration: underline;
+}
+
+.content-boxes{
+    padding: 30px;
+    border: 1px solid white;
 }
