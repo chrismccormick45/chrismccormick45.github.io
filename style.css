@@ -61,29 +61,30 @@ html{
         </div> */
 
 .general-photo{
+    padding-top: 42px;
     width: 350px;
 }
 
 .icons{
+    text-align: center;
     width: 50px;
 }
 
 .text-boxes{
     padding: 30px;
-    /*padding-top: 30px;*/
     border: 1px solid white;
     margin: 100spx;
 }
 
 .grid-2{
     display: grid; /*want it to be grid pattern (side by side)*/
-    grid-template-columns: auto auto; /*two autos bc we want 2 columns*/
+    grid-template-columns: auto 50px auto; /*two autos bc we want 2 columns*/
     padding: 40px;
 }
 
-.grid-3{
-    display: grid; /*want it to be grid pattern (side by side)*/
-    grid-template-columns: auto auto auto; /*two autos bc we want 2 columns*/
+.grid-3 {
+    display: grid;
+    grid-template-columns: minmax(50px, 600px) auto minmax(50px, 600px); /*two autos bc we want 2 columns*/
     padding: 40px;
 }
 
