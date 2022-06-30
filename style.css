@@ -10,13 +10,13 @@ https://www.educative.io/answers/class-and-id-selectors-in-css
 
 */
 
-html{
+html {
     background-image: url("https://i.pinimg.com/originals/09/01/e5/0901e529a555493ba5b58ba6579db104.png");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     color: white;
-    font-family: Dubai;
+    font-family: Arial;
     scroll-behavior: smooth;
 }
 
