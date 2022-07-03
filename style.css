@@ -16,19 +16,24 @@ html {
     background-position: center;
     background-attachment: fixed;
     color: white;
-    font-family: Arial;
+    font-family: 'Fjalla One', sans-serif;
     scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: 'Fjalla One';
+    src: url(https://fonts.google.com/specimen/Fjalla+One#standard-styles);
 }
 
 .navbar{
     display: grid; /*want it to be grid pattern (side by side)*/
-    grid-template-columns: auto auto auto; /*three autos bc we want 2 columns*/
+    grid-template-columns: auto auto auto auto auto; /*three autos bc we want 2 columns*/
+    font-size: 18pt;
     border-bottom: 2px solid white;
     position: static;
-    top: 0;
-    width: 100%; /*width of nav bar*/
     background-color: transparent;
     color: white;
+    text-align: center;
 }
 
 /* <div class="navbar">
@@ -61,7 +66,10 @@ html {
         </div> */
 
 .general-photo{
-    padding-top: 42px;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    vertical-align: middle;
     width: 350px;
 }
 
@@ -73,7 +81,9 @@ html {
 .text-boxes{
     padding: 30px;
     border: 1px solid white;
-    margin: 100spx;
+    margin: 10px;
+    line-height: 30px;
+    vertical-align: center;
 }
 
 .grid-2{
@@ -102,21 +112,45 @@ html {
     text-align: center;
     text-decoration: underline;
     color: white;
-    padding-top: 6%;
+    padding-top: 4%;
 }
 
 .sub-intro {
-    padding-bottom: 45%;
     text-align: center;
     color: white;
 }
 
 .headings{
     padding-left: 40px;
+    padding-top: 35%;
     text-decoration: underline;
 }
 
-.content-boxes{
+.endorsement-box {
+    text-align: center;
+    display: grid;
+    grid-template-rows: auto auto;
     padding: 30px;
     border: 1px solid white;
+    text-align: center;
+    background-color: black;
+}
+
+.content-padding{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.nav{
+    font: bold;
+    scroll-behavior: smooth;
+}
+
+a:link{
+    text-decoration: none;
+    color: white;
+}
+
+a:visited{
+    color: white;
 }
