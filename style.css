@@ -66,11 +66,9 @@ html {
         </div> */
 
 .general-photo{
-    text-align: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    vertical-align: middle;
-    width: 350px;
+    max-width: 100%;
+    height: auto;
+    width: auto;
 }
 
 .icons{
@@ -83,18 +81,18 @@ html {
     border: 1px solid white;
     margin: 10px;
     line-height: 30px;
-    vertical-align: center;
+    background-color: black;
 }
 
 .grid-2{
     display: grid; /*want it to be grid pattern (side by side)*/
-    grid-template-columns: auto 50px auto; /*two autos bc we want 2 columns*/
+    grid-template-columns: minmax(50px, 350px) 100px minmax(50px, 5000px); /*two autos bc we want 2 columns*/
     padding: 40px;
 }
 
 .grid-3 {
     display: grid;
-    grid-template-columns: minmax(50px, 600px) auto minmax(50px, 600px); /*two autos bc we want 2 columns*/
+    grid-template-columns: minmax(50px, 5000px) 100px minmax(50px, 5000px); /*two autos bc we want 2 columns*/
     padding: 40px;
 }
 
@@ -102,7 +100,6 @@ html {
     display: grid;
     grid-template-columns: auto auto auto;
 }
-
 
 .box-spacing{
     padding-right: 20px; /*adding the space between the boxes*/
@@ -126,10 +123,10 @@ html {
     text-decoration: underline;
 }
 
-.endorsement-box {
+.endorsement-horiz {
     text-align: center;
     display: grid;
-    grid-template-rows: auto auto;
+    grid-template-columns: auto auto auto;
     padding: 30px;
     border: 1px solid white;
     text-align: center;
@@ -153,4 +150,33 @@ a:link{
 
 a:visited{
     color: white;
+}
+
+.skills-boxes {
+    background-color: black;
+    text-align: center;
+    font-size: 20pt;
+    border: 1px solid white;
+    padding: 20px;
+}
+
+.list-entries{
+    font-size: 14pt;
+    text-align: left;
+    text-decoration: none;
+}
+
+.experience-grid{
+   display: grid;
+   grid-template-columns: auto auto auto;
+   padding: 30px;
+   border: 1px solid white;
+   text-align: center;
+   background-color: black;
+}
+
+.grid3 {
+    display: grid;
+    grid-template-columns: minmax(50px, 5000px) 100px minmax(50px, 5000px); /*two autos bc we want 2 columns*/
+    padding: 40px;
 }
