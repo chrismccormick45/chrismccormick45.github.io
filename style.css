@@ -180,3 +180,15 @@ a:visited{
     grid-template-columns: minmax(50px, 5000px) 100px minmax(50px, 5000px); /*two autos bc we want 2 columns*/
     padding: 40px;
 }
+
+
+div.gallery{
+    margin: 5px;
+    border: 1px solid white;
+    float: left;
+    width: 180px;
+}
+
+div.gallery:hover{
+    border: 1px solid white;
+}
