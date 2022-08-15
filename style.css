@@ -27,7 +27,7 @@ html {
 
 .navbar{
     display: grid; /*want it to be grid pattern (side by side)*/
-    grid-template-columns: auto auto auto auto auto; /*three autos bc we want 2 columns*/
+    grid-template-columns: auto auto auto auto auto auto; /*three autos bc we want 2 columns*/
     font-size: 18pt;
     border-bottom: 2px solid white;
     position: static;
@@ -129,7 +129,6 @@ html {
     grid-template-columns: auto auto auto;
     padding: 30px;
     border: 1px solid white;
-    text-align: center;
     background-color: black;
 }
 
