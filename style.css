@@ -36,35 +36,6 @@ html {
     text-align: center;
 }
 
-/* <div class="navbar">
-            <div style="text-align: center; padding-top: 7px">
-                <a href="mailto:chrismccormick@g.ucla.edu">
-                    <img class="icons"
-                         src="newemail.png"
-                         alt="Email" />
-                    </img>
-                </a>
-            </div>
-
-            <div style="text-align: center;">
-                <a href="resume.pdf">
-                    <img class="icons"
-                         src="resume.png"
-                         alt="Resume" />
-                    </img>
-                </a>
-            </div>
-
-            <div style="text-align: center;">
-                <a href="https://www.linkedin.com/in/christopher-mccormick-9645b0218/">
-                    <img class="icons"
-                         src="linkedin.png"
-                         alt="LinkedIn" />
-                    </img>
-                </a>
-            </div>
-        </div> */
-
 .general-photo {
     padding: 30px;
     max-width: 100%;
@@ -141,6 +112,7 @@ html {
 .nav{
     font: bold;
     scroll-behavior: smooth;
+    font-size: 20px;
 }
 
 a:link{
