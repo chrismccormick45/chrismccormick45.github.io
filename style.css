@@ -65,7 +65,8 @@ html {
             </div>
         </div> */
 
-.general-photo{
+.general-photo {
+    padding: 30px;
     max-width: 100%;
     height: auto;
     width: auto;
@@ -159,6 +160,16 @@ a:visited{
     padding: 20px;
 }
 
+.subtext{
+    padding-top: 7px;
+    font-size: 9pt;
+}
+
+.endorsement-name{
+    font-size: 15pt;
+    padding-bottom: 10px;
+}
+
 .list-entries{
     font-size: 14pt;
     text-align: left;
@@ -191,3 +202,4 @@ div.gallery{
 div.gallery:hover{
     border: 1px solid white;
 }
+
