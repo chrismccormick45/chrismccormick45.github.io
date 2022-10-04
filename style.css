@@ -16,8 +16,7 @@ html {
     background-position: center;
     background-attachment: fixed;
     color: white;
-    font-family: 'Fjalla One', sans-serif;
-    scroll-behavior: smooth;
+    font-family: Tahoma;
 }
 
 @font-face {
@@ -28,7 +27,7 @@ html {
 .navbar{
     display: grid; /*want it to be grid pattern (side by side)*/
     grid-template-columns: auto auto auto auto auto auto; /*three autos bc we want 2 columns*/
-    font-size: 18pt;
+    font-size: 20pt;
     border-bottom: 2px solid white;
     position: static;
     background-color: transparent;
@@ -134,16 +133,16 @@ a:visited{
 
 .subtext{
     padding-top: 7px;
-    font-size: 9pt;
+    font-size: 10pt;
 }
 
 .endorsement-name{
-    font-size: 15pt;
+    font-size: 20pt;
     padding-bottom: 10px;
 }
 
 .list-entries{
-    font-size: 14pt;
+    font-size: 15pt;
     text-align: left;
     text-decoration: none;
 }
@@ -159,8 +158,12 @@ a:visited{
 
 .grid3 {
     display: grid;
-    grid-template-columns: minmax(50px, 5000px) 100px minmax(50px, 5000px); /*two autos bc we want 2 columns*/
+    grid-template-columns: minmax(50px, 5000px) 50px minmax(50px, 400px); /*two autos bc we want 2 columns*/
     padding: 40px;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0;
+    object-position: left;
 }
 
 
