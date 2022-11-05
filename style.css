@@ -16,8 +16,8 @@ html {
     background-position: center;
     background-attachment: fixed;
     color: white;
-    font-family: Tahoma;
     scroll-behavior: smooth;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 @font-face {
@@ -37,7 +37,7 @@ html {
 }
 
 .general-photo {
-    padding: 30px;
+    pax;
     max-width: 100%;
     height: auto;
     width: auto;
@@ -159,12 +159,11 @@ a:visited{
 
 .grid3 {
     display: grid;
-    grid-template-columns: minmax(50px, 5000px) 50px minmax(50px, 400px); /*two autos bc we want 2 columns*/
+    grid-template-columns: minmax(100px, 750px) 50px auto; /*two autos bc we want 2 columns*/
     padding: 40px;
     text-align: center;
     vertical-align: middle;
     margin: 0;
-    object-position: left;
 }
 
 
