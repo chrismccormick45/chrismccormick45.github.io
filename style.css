@@ -47,10 +47,11 @@ html {
     width: 50px;
 }
 
-.text-boxes{
+.text-boxes {
     padding: 30px;
+    position: center;
     border: 1px solid white;
-    margin: 10px;
+    margin: auto;
     line-height: 30px;
     background-color: black;
 }
