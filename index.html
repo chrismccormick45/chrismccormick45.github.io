@@ -1,12 +1,15 @@
     <!DOCTYPE html>
 
 <html id="top">
-    <head> 
+
+    <head>
         <title> Chris's Personal Website </title>
         <link rel="stylesheet" href="style.css" />
     </head>
 
     <body>
+
+        <!-- Setting navbar -->
         <div style="align-content: center;">
             <div class="navbar">
                 <div class="nav"><a href="#about">About</a></div>
@@ -18,7 +21,10 @@
             </div>
         </div>
 
+        <!-- Linking github to name at top of page -->
         <h1 class="intro"><a href="https://github.com/chrismccormick45" target="_blank">Christopher McCormick</a></h1>
+
+        <!-- Displaying and linking icons to desired locations -->
         <div style="display: grid; grid-template-columns: auto 100px auto;">
             <div style="text-align: right; padding-top: 8px;">
                 <a href="mailto:chrismccormick@g.ucla.edu">
@@ -49,11 +55,15 @@
         </div>
         <h2 class="sub-intro">Aerospace Engineering</h2>
 
+
+
+
+        <!-- About Block -->
         <div>
             <h2 class="headings"><a id="about">About</a></h2>
             <div class="content-padding">
-                <div class="grid-2" style="border: 1px solid white; vertical-align: middle;">
-                    <div class="photocenter">
+                <div class="columns2-uneven" style="border: 1px solid white; vertical-align: middle;">
+                    <div class="center-photo">
                         <img class="general-photo"
                              src="president.jpg"
                              alt="Photo of Chris McCormick" />
@@ -62,12 +72,12 @@
 
                     <div></div>
 
-                    <div class="text-boxes" style="text-align: center;">
+                    <div class="general-text-boxes" style="text-align: center;">
                         <p style="font-size: 15pt;">
                             Hello! My name is Chris, and I'm a Junior B.S. Aerospace Engineering student at UCLA. Though I am a transfer student, I have tried my hardest to get involved with as many
                             engineering projects as possible. As you will further down the page, I joined a rover building project at my previous institution, I have joined the Design/Build/Fly (DBF)
-                            club at UCLA, and am joining the Prometheus, hybrid rocket team of the Rocket Project at UCLA. This year, I am eager to learn and participate more in DBF, and can hardly 
-                            wait to start getting involved with Rocket Project! Having gained the experience I have, and seeing all the opportunities available, I am excited to immerse myself in 
+                            club at UCLA, and am joining the Prometheus, hybrid rocket team of the Rocket Project at UCLA. This year, I am eager to learn and participate more in DBF, and can hardly
+                            wait to start getting involved with Rocket Project! Having gained the experience I have, and seeing all the opportunities available, I am excited to immerse myself in
                             engineering and eventually get a job in the aerospace industry!
                         </p>
 
@@ -83,12 +93,16 @@
             </div>
         </div>
 
+
+
+
+        <!-- Education Block -->
         <h2 class="headings"><a id="education">Education</a></h2>
         <div class="content-padding">
             <div style="border: 1px solid white;">
-                <div class="grid-3">
+                <div class="columns2-even">
 
-                    <div class="text-boxes" style="margin: 10px;">
+                    <div class="general-text-boxes" style="margin: 10px;">
                         <div class="college-logos">
                             <div style="text-align: center;">
                                 <img style="max-width: 75px; padding-top: 20px;"
@@ -111,7 +125,7 @@
 
                     <div style="text-align: center; color: transparent;">FUSC</div>
 
-                    <div class="text-boxes" style="margin: 10px;">
+                    <div class="general-text-boxes" style="margin: 10px;">
                         <div class="college-logos">
                             <div style="text-align: center;">
                                 <img class="icons"
@@ -140,17 +154,21 @@
             </div>
         </div>
 
+
+
+
+        <!-- Experience Block -->
         <h2 class="headings"><a id="experience">Experience</a></h2>
         <div class="content-padding">
             <div style="border: 1px solid white;">
 
-                <div class="grid3">
-                    <div class="text-boxes">
+                <div class="columns2-even">
+                    <div class="general-text-boxes">
                         <h3 style="text-decoration: underline;">Design, Build, Fly at UCLA</h3>
 
                         <p style="padding-top: 15px; font-size: 13pt;">
                             At UCLA, I have joined the Design/Build/Fly club. In this club, students are challenged to design a plane capable of
-                            completing a series of missions laid out by the intercollegiate 
+                            completing a series of missions laid out by the intercollegiate
                             <a href="https://www.aiaa.org/dbf/competition-information/general-information" target="_blank" style="text-decoration: underline;">AIAA Design/Build/Fly Competition</a>.
                             I decided to join the aerodynamics subteam, and have been working with a group of students to design the nose and the wings of the plane.
                             We have learned how to design different airfoils and aerodynamic surfaces in SolidWorks, how to run CFD simulations on those
@@ -165,7 +183,7 @@
 
                     <div></div>
 
-                    <div class="photocenter">
+                    <div class="center-photo">
                         <img class="general-photo"
                              src="dbf_banner.jpg"
                              alt="UCLA DBF" />
@@ -174,62 +192,153 @@
 
                 </div>
 
-                <div class="grid3">
-                    <div class="text-boxes">
+
+                <!-- E96A Plane Design entry -->
+                <div class="columns2-even">
+                    <div class="general-text-boxes">
+                        <h3 style="text-decoration: underline;">Engineering Course: E96A Plane Design</h3>
+
+                        <p style="padding-top: 15px; font-size: 15pt;">
+                            Also at UCLA, I decided to enroll in a rocket engineering course. In this course, teams of two to five students were tasked with
+                            designing, testing, and assembling two model rockets. Using a model rocket design program called OpenRocket, my team settled
+                            on a mainstream design for our first rocket. After 3D modeling it in SolidWorks, with a detachable nose cone and
+                            deployable parachute, we then completely 3D printed the rocket. However, when launch came, the results were lack luster
+                            and we did not achieve anywhere near the apogee and speed that we expected.
+                        </p>
+
+                    </div>
+
+                    <div></div>
+
+                    <div class="slideshow-center">
+                        <!-- Images broken into 3 rows -->
+                        <div class="rows2">
+
+                            <div class="slideshow-container">
+
+                                <!-- Full-width images with titles -->
+                                <div class="mySlides fade">
+                                    <h3 style="text-decoration: underline;">SolidWorks Model</h3>
+                                    <img src="Geezer_Mode.jpg" style="width: 100%; height: 100%">
+                                </div>
+
+                                <div class="mySlides fade">
+                                    <h3 style="text-decoration: underline;">Team Photo</h3>
+                                    <img src="Geezer_Group.jpg" style="width: 100%; height: 100%">
+                                </div>
+
+                                <div class="mySlides fade">
+                                    <h3 style="text-decoration: underline;">Finished Assembly</h3>
+                                    <img src="Geezer_Finished.jpg" style="width: 100%; height: 100%">
+                                </div>
+
+                                <!-- Next and prev buttons -->
+                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                            </div>
+
+                            <div></div>
+
+                            <!-- Image number dots -->
+                            <div style="text-align:center">
+                                <span class="dot" onclick="currentSlide(1)"></span>
+                                <span class="dot" onclick="currentSlide(2)"></span>
+                                <span class="dot" onclick="currentSlide(3)"></span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- E96R: Rocket Desing entry -->
+                <div class="columns2-even">
+                    <div class="general-text-boxes">
                         <h3 style="text-decoration: underline;">Engineering Course: E96R Rocket Engineering</h3>
 
                         <p style="padding-top: 15px; font-size: 15pt;">
                             Also at UCLA, I decided to enroll in a rocket engineering course. In this course, teams of two to five students were tasked with
                             designing, testing, and assembling two model rockets. Using a model rocket design program called OpenRocket, my team settled
-                            on a mainstream design for our first rocket. After 3D modeling it in SolidWorks, with a detachable nose cone and 
+                            on a mainstream design for our first rocket. After 3D modeling it in SolidWorks, with a detachable nose cone and
                             deployable parachute, we then completely 3D printed the rocket. However, when launch came, the results were lack luster
                             and we did not achieve anywhere near the apogee and speed that we expected.
                         </p>
 
                         <p style="padding-top: 15px; font-size: 15pt;">
-                            When designing our second rocket, my team wanted to do better. So, each team member conducted their own independent 
+                            When designing our second rocket, my team wanted to do better. So, each team member conducted their own independent
                             research and suggested ideas to the group. We incorporated parts of the first rocket that worked well, like the number and
                             shape of the fins, but also added new components and experimented with different materials. We made the body tube out of
-                            our own fiberglass lay-up that we created, the fins out of laser cut ply wood, we designed a smaller, more aerodynamic 
-                            nose cone, we incorporated a new, 3D printed boat tail to increase the speed of our rocket, and also included a new 
+                            our own fiberglass lay-up that we created, the fins out of laser cut ply wood, we designed a smaller, more aerodynamic
+                            nose cone, we incorporated a new, 3D printed boat tail to increase the speed of our rocket, and also included a new
                             altimeter. I worked on soldering the electrical components of the rocket, helped with deciding the shapes of and 3D modeling
-                            of the fins, engine mounts, and nose cone. It was satisfying to see our hard work payoff when our rocket exceeding our 
+                            of the fins, engine mounts, and nose cone. It was satisfying to see our hard work payoff when our rocket exceeding our
                             expectations, achieving an apogee of about 3200 ft and a max speed of about 0.5 Mach. This rocket is pictured on the right.
                         </p>
 
-                        <p style="padding-top: 15px; font-size: 15pt;">
-                            I am currently enrolled in the engineering course E96A Engineering Design: Planes, where I will conduct similar work but with remote-controlled planes.
-                        </p>
                     </div>
 
                     <div></div>
 
-                        <div class="photocenter">
-                            <img class="general-photo" style="padding: 50px; max-height: 500px;"
-                                 src="e96r.jpg"
-                                 alt="Chris's E96R Rocket" />
-                            </img>
+                    <div class="slideshow-center">
+                        <!-- Images broken into 3 rows -->
+                        <div class="rows2">
+                            <div class="slideshow-container">
+
+                                <!-- Full-width images with titles -->
+                                <div class="mySlides fade">
+                                    <h3 style="text-decoration: underline;">SolidWorks Model</h3>
+                                    <img src="e96r.jpg" style="width: 100%; height: 100%">
+                                </div>
+
+                                <div class="mySlides fade">
+                                    <h3 style="text-decoration: underline;">Team Photo</h3>
+                                    <img src="Geezer_Group.jpg" style="width: 100%; height: 100%">
+                                </div>
+
+                                <div class="mySlides fade">
+                                    <h3 style="text-decoration: underline;">Finished Assembly</h3>
+                                    <img src="Geezer_Finished.jpg" style="width: 100%; height: 100%">
+                                </div>
+
+                                <!-- Next and prev buttons -->
+                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                            </div>
+
+                            <div></div>
+
+                            <!-- Image number dots -->
+                            <div style="text-align:center">
+                                <span class="dot" onclick="currentSlide(1)"></span>
+                                <span class="dot" onclick="currentSlide(2)"></span>
+                                <span class="dot" onclick="currentSlide(3)"></span>
+                            </div>
                         </div>
+                    </div>
                 </div>
 
-                <div class="grid3">
-                    <div class="text-boxes">
+
+                <!-- Mars Rover Team entry -->
+                <div class="columns2-even">
+                    <div class="general-text-boxes">
                         <h3 style="text-decoration: underline;">Saddleback Robotics</h3>
 
                         <p style=" padding-top: 15px; font-size: 13pt;">
                             At my previous institution, I joined the robotics club's Mars Rover Team. This team was tasked with the ground-up design
-                            and assembly of a radio-controller rover that was capable of navigating rough terrain, driving autonomously, picking up 
-                            and dragging heavy objects with its mechanical arm, and analyzing dirt samples for signs of life. 
+                            and assembly of a radio-controller rover that was capable of navigating rough terrain, driving autonomously, picking up
+                            and dragging heavy objects with its mechanical arm, and analyzing dirt samples for signs of life.
                             Though I also helped different subteams with assembly, I decided to join the chassis and electrical subteams. On these
-                            subteams, I was assigned to design, 3D model, and assemble different components within the rover's chassis. These 
-                            components mainly consisted of electrical circuits and their corresponding housing boxes, however I also worked on 
+                            subteams, I was assigned to design, 3D model, and assemble different components within the rover's chassis. These
+                            components mainly consisted of electrical circuits and their corresponding housing boxes, however I also worked on
                             assembling different components that connected to the rover's drivetrain.
                         </p>
                     </div>
 
                     <div></div>
 
-                    <div class="photocenter">
+                    <div class="center-photo">
                         <img class="general-photo" style="padding: 50px; max-height: 1000px;"
                              src="scrobotics.jpg"
                              alt="Saddleback College Mars Rover Osiris" />
@@ -241,11 +350,14 @@
         </div>
 
 
+
+
+        <!-- Skills Block -->
         <h2 class="headings"><a id="skills">Skills</a></h2>
         <div class="content-padding">
             <div style="border: 1px solid white;">
 
-                <div class="grid-3">
+                <div class="columns2-even">
                     <div class="skills-boxes">
                         Academic Skills:
                         <ul class="list-entries">
@@ -292,6 +404,10 @@
             </div>
         </div>
 
+
+
+
+        <!-- Media Appearances Block -->
         <h2 class="headings"><a id="appearances">Media Appearances</a></h2>
         <div class="content-padding">
             <div style="text-align: center; display: grid; grid-template-columns: auto; padding: 30px; border: 1px solid white; background-color: black;">
@@ -309,9 +425,13 @@
             </div>
         </div>
 
+
+
+
+        <!-- Celebrity Endorsements Block -->
         <h2 class="headings"><a id="endorsements">Celebrity Endorsements</a></h2>
         <div class="content-padding">
-            <div class="endorsement-horiz">
+            <div class="endorsement-divisions">
                 <div style="max-width: 100%; height: auto; width: auto;">
                     <a href="https://www.joeychestnut.com/" target="_blank">
                         <img style="padding: 20px; height: 350px;"
@@ -346,12 +466,19 @@
             </div>
         </div>
 
+
+        <!-- Auto scroll to top -->
         <h1 style="padding-top: 40px; text-align: center; scroll-behavior: smooth; text-decoration: underline;"><a href="#top">Back to Top</a></h1>
 
+        <!-- Bottom message -->
         <div style="font-size: 10pt; text-align: center;">
             website being written over the course of many late nights
         </div>
     </body>
+
+    <!-- Linking Java Script -->
+    <script src="website.js"></script>
+
 </html>
 
 

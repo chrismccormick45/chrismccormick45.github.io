@@ -1,15 +1,14 @@
-/* this is a comment in CSS */
 
-/*
-https://www.educative.io/answers/class-and-id-selectors-in-css
-*/
 
-/*
-    Selectors: class(.) and id(#)
-    - classes are used throughout the code, id's are unqiue and only used onceish
 
-*/
 
+
+/*_____________________________________________________________________*/
+/*****                        PAGE FUNCTIONS                       *****/
+/*_____________________________________________________________________*/
+
+
+/* Setting background image, scoll behavior, and default font & color */
 html {
     background-image: url("https://i.pinimg.com/originals/09/01/e5/0901e529a555493ba5b58ba6579db104.png");
     background-size: cover;
@@ -20,15 +19,21 @@ html {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-@font-face {
-    font-family: 'Fjalla One';
-    src: url(https://fonts.google.com/specimen/Fjalla+One#standard-styles);
+/* Making links appear white in color */
+a:link {
+    text-decoration: none;
+    color: white;
 }
 
+/* Making visited links remain white in color */
+a:visited {
+    color: white;
+}
+
+/* Creating and customizing navbar */
 .navbar{
-    display: grid; /*want it to be grid pattern (side by side)*/
-    grid-template-columns: auto auto auto auto auto auto; /*three autos bc we want 2 columns*/
-    font-size: 20pt;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
     border-bottom: 2px solid white;
     position: static;
     background-color: transparent;
@@ -36,18 +41,58 @@ html {
     text-align: center;
 }
 
-.general-photo {
-    max-width: 100%;
-    height: auto;
-    width: auto;
+/* Setting behavior of page navigating */
+.nav {
+    font: bold;
+    scroll-behavior: smooth;
+    font-size: 20px;
 }
 
-.icons{
+/* Setting parameters for name at top of the page */
+.intro {
+    text-align: center;
+    text-decoration: underline;
+    color: white;
+    padding-top: 4%;
+}
+
+/* Customizing mail, linkedin, resume icons */
+.icons {
     text-align: center;
     width: 50px;
 }
 
-.text-boxes {
+/* Setting parameters for title under name at top of the page */
+.sub-intro {
+    text-align: center;
+    color: white;
+}
+
+/* Setting parameters for block headings */
+.headings {
+    padding-left: 40px;
+    padding-top: 35%;
+    text-decoration: underline;
+}
+
+/* Block content padding */
+.content-padding {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+
+
+
+
+
+/*_____________________________________________________________________*/
+/*****                   PARAGRAPH/TEXT FUNCTIONS                  *****/
+/*_____________________________________________________________________*/
+
+
+/* Setting parameters for general text boxes*/
+.general-text-boxes {
     padding: 30px;
     position: center;
     border: 1px solid white;
@@ -56,74 +101,72 @@ html {
     background-color: black;
 }
 
-.grid-2{
-    display: grid; /*want it to be grid pattern (side by side)*/
-    grid-template-columns: minmax(50px, 500px) 50px minmax(50px, 5000px); /*two autos bc we want 2 columns*/
+/* Setting parameters for image subtexting */
+.subtext {
+    padding-top: 7px;
+    font-size: 10pt;
+}
+
+/* Setting parameters for endorsement names*/
+.endorsement-name {
+    font-size: 20pt;
+    padding-bottom: 10px;
+}
+
+/* Setting parameters for list entries */
+.list-entries {
+    font-size: 15pt;
+    text-align: left;
+    text-decoration: none;
+}
+
+
+
+
+
+/*_____________________________________________________________________*/
+/*****                     DIVISION FUNCTIONS                      *****/
+/*_____________________________________________________________________*/
+
+
+/* 2 division horizontal grid pattern with space between */
+.columns2-uneven {
+    display: grid;
+    grid-template-columns: minmax(50px, 500px) 50px minmax(50px, 5000px);
     padding: 50px;
 }
 
-.grid-3 {
+/* 2 division horizontal grid pattern with space between */
+.columns2-even {
     display: grid;
-    grid-template-columns: minmax(50px, 5000px) 100px minmax(50px, 5000px); /*two autos bc we want 2 columns*/
-    padding: 40px;
-}
-
-.college-logos{
-    display: grid;
-    grid-template-columns: auto auto auto;
-}
-
-.box-spacing{
-    padding-right: 20px; /*adding the space between the boxes*/
-}
-
-.intro{
+    grid-template-columns: minmax(50px, 5000px) 100px minmax(50px, 5000px);
+    padding: 50px;
     text-align: center;
-    text-decoration: underline;
-    color: white;
-    padding-top: 4%;
+    vertical-align: middle;
+    margin: 0;
 }
 
-.sub-intro {
-    text-align: center;
-    color: white;
-}
-
-.headings{
-    padding-left: 40px;
-    padding-top: 35%;
-    text-decoration: underline;
-}
-
-.endorsement-horiz {
-    text-align: center;
+/* 3 division horizontal grid pattern evenly spaced */
+.endorsement-divisions {
     display: grid;
     grid-template-columns: auto auto auto;
-    padding: 30px;
+    text-align: center;
+    padding: 50px;
     border: 1px solid white;
     background-color: black;
 }
 
-.content-padding{
-    padding-left: 50px;
-    padding-right: 50px;
+/* 2 division vertical grid pattern with space between */
+.rows2 {
+    display: grid;
+    grid-template-rows: minmax(100px, 500px) 100px 20px;
+    text-align: center;
+    vertical-align: middle;
+    width: 100%;
+    margin: 0;
 }
 
-.nav{
-    font: bold;
-    scroll-behavior: smooth;
-    font-size: 20px;
-}
-
-a:link{
-    text-decoration: none;
-    color: white;
-}
-
-a:visited{
-    color: white;
-}
-
+/* Setting parameters for skill boxes and content */
 .skills-boxes {
     background-color: black;
     text-align: center;
@@ -132,62 +175,128 @@ a:visited{
     padding: 20px;
 }
 
-.subtext{
-    padding-top: 7px;
-    font-size: 10pt;
+
+
+
+
+/*_____________________________________________________________________*/
+/*****                       IMAGE FUNCTIONS                       *****/
+/*_____________________________________________________________________*/
+
+
+/* Setting parameters for general photos */
+.general-photo {
+    max-width: 100%;
+    height: auto;
+    width: auto;
 }
 
-.endorsement-name{
-    font-size: 20pt;
-    padding-bottom: 10px;
-}
-
-.list-entries{
-    font-size: 15pt;
-    text-align: left;
-    text-decoration: none;
-}
-
-.experience-grid{
-   display: grid;
-   grid-template-columns: auto auto auto;
-   padding: 30px;
-   border: 1px solid white;
-   text-align: center;
-   background-color: black;
-}
-
-.grid3 {
+/* Setting parameters for college logos */
+.college-logos{
     display: grid;
-    grid-template-columns: minmax(50px, 5000px) 100px minmax(50px, 5000px);
-    padding: 40px;
-    text-align: center;
-    vertical-align: middle;
-    margin: 0;
+    grid-template-columns: auto auto auto;
 }
 
-
-div.gallery{
-    margin: 5px;
-    border: 1px solid white;
-    float: left;
-    width: 180px;
-}
-
-div.gallery:hover{
-    border: 1px solid white;
-}
-
-.gridvert{
-    display: grid;
-    grid-template-rows: auto auto auto;
-    text-align: center;
-    vertical-align: middle;
-}
-
-.photocenter{
+/* Centering general photos vertically and horizontally */
+.center-photo {
     display: flex;
     justify-content: center;
     align-items: center;
     height: inherit;
+}
+
+
+
+
+
+
+/*_____________________________________________________________________*/
+/*****                     SLIDESHOW FUNCTIONS                     *****/
+/*_____________________________________________________________________*/
+
+
+/* Centers slideshow within division */
+.slideshow-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+}
+
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the prev and next buttons on each side */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* Create black background on next & prev hover */
+.prev:hover, .next:hover {
+    background-color: black;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: dimgray;
+}
+
+/* Image fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
 }
