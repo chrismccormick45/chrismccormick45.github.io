@@ -118,7 +118,8 @@
                                 </img>
                             </div>
                         </div>
-                        <div style="text-align: center; padding-top: 20px; font-size: 15pt;">
+
+                        <div class="education-schools">
                             <div>B.S. in Aerospace Engineering -- Expected Graduation 2024</div>
                         </div>
                     </div>
@@ -141,7 +142,8 @@
                                 </img>
                             </div>
                         </div>
-                        <div style="text-align: center; padding-top: 20px; font-size: 15pt;">
+
+                        <div class="education-schools">
                             <div>A.S. in Physics -- Received May 2022, Magna Cum Laude</div>
                             <div>A.S.-T in Physics -- Received May 2022, Magna Cum Laude</div>
                             <div>A.A. in Mathematics -- Received May 2022, Magna Cum Laude</div>
@@ -199,11 +201,7 @@
                         <h3 style="text-decoration: underline;">Engineering Course: E96A Plane Design</h3>
 
                         <p style="padding-top: 15px; font-size: 15pt;">
-                            Also at UCLA, I decided to enroll in a rocket engineering course. In this course, teams of two to five students were tasked with
-                            designing, testing, and assembling two model rockets. Using a model rocket design program called OpenRocket, my team settled
-                            on a mainstream design for our first rocket. After 3D modeling it in SolidWorks, with a detachable nose cone and
-                            deployable parachute, we then completely 3D printed the rocket. However, when launch came, the results were lack luster
-                            and we did not achieve anywhere near the apogee and speed that we expected.
+                            UNDER CONSTRUCTION
                         </p>
 
                     </div>
@@ -214,27 +212,27 @@
                         <!-- Images broken into 3 rows -->
                         <div class="rows2">
 
-                            <div class="slideshow-container">
+                            <div id="slideshow1" class="slideshow-container">
 
-                                <!-- Full-width images with titles -->
+                                <!-- Slideshow images with titles -->
                                 <div class="mySlides fade">
                                     <h3 style="text-decoration: underline;">SolidWorks Model</h3>
-                                    <img src="Geezer_Mode.jpg" style="width: 100%; height: 100%">
+                                    <img src="Geezer_Mode.jpg" class="slideshow-images">
                                 </div>
 
                                 <div class="mySlides fade">
                                     <h3 style="text-decoration: underline;">Team Photo</h3>
-                                    <img src="Geezer_Group.jpg" style="width: 100%; height: 100%">
+                                    <img src="Geezer_Group.jpg" class="slideshow-images">
                                 </div>
 
                                 <div class="mySlides fade">
                                     <h3 style="text-decoration: underline;">Finished Assembly</h3>
-                                    <img src="Geezer_Finished.jpg" style="width: 100%; height: 100%">
+                                    <img src="Geezer_Finished.jpg" class="slideshow-images">
                                 </div>
 
                                 <!-- Next and prev buttons -->
-                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                                <a class="prev" onclick="plusSlides(-1, slideshow1)">&#10094;</a>
+                                <a class="next" onclick="plusSlides(1, slideshow1)">&#10095;</a>
 
                             </div>
 
@@ -242,9 +240,9 @@
 
                             <!-- Image number dots -->
                             <div style="text-align:center">
-                                <span class="dot" onclick="currentSlide(1)"></span>
-                                <span class="dot" onclick="currentSlide(2)"></span>
-                                <span class="dot" onclick="currentSlide(3)"></span>
+                                <span class="dot" onclick="currentSlide(1, slideshow1)"></span>
+                                <span class="dot" onclick="currentSlide(2, slideshow1)"></span>
+                                <span class="dot" onclick="currentSlide(3, slideshow1)"></span>
                             </div>
 
                         </div>
@@ -258,7 +256,7 @@
                         <h3 style="text-decoration: underline;">Engineering Course: E96R Rocket Engineering</h3>
 
                         <p style="padding-top: 15px; font-size: 15pt;">
-                            Also at UCLA, I decided to enroll in a rocket engineering course. In this course, teams of two to five students were tasked with
+                            Also at UCLA, I decided to enroll in a voluntary, hands-on rocket engineering course. In this course, teams of two to five students were tasked with
                             designing, testing, and assembling two model rockets. Using a model rocket design program called OpenRocket, my team settled
                             on a mainstream design for our first rocket. After 3D modeling it in SolidWorks, with a detachable nose cone and
                             deployable parachute, we then completely 3D printed the rocket. However, when launch came, the results were lack luster
@@ -280,43 +278,51 @@
 
                     <div></div>
 
-                    <div class="slideshow-center">
-                        <!-- Images broken into 3 rows -->
-                        <div class="rows2">
-                            <div class="slideshow-container">
-
-                                <!-- Full-width images with titles -->
-                                <div class="mySlides fade">
-                                    <h3 style="text-decoration: underline;">SolidWorks Model</h3>
-                                    <img src="e96r.jpg" style="width: 100%; height: 100%">
-                                </div>
-
-                                <div class="mySlides fade">
-                                    <h3 style="text-decoration: underline;">Team Photo</h3>
-                                    <img src="Geezer_Group.jpg" style="width: 100%; height: 100%">
-                                </div>
-
-                                <div class="mySlides fade">
-                                    <h3 style="text-decoration: underline;">Finished Assembly</h3>
-                                    <img src="Geezer_Finished.jpg" style="width: 100%; height: 100%">
-                                </div>
-
-                                <!-- Next and prev buttons -->
-                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-                            </div>
-
-                            <div></div>
-
-                            <!-- Image number dots -->
-                            <div style="text-align:center">
-                                <span class="dot" onclick="currentSlide(1)"></span>
-                                <span class="dot" onclick="currentSlide(2)"></span>
-                                <span class="dot" onclick="currentSlide(3)"></span>
-                            </div>
-                        </div>
+                    <div class="center-photo">
+                        <img class="general-photo" style="padding: 50px; max-height: 1000px;"
+                             src="e96r.jpg" />
+                        </img>
                     </div>
+
+                    <!--
+    <div class="slideshow-center">
+
+        <div class="rows2">
+
+            <div id="slideshow2" class="slideshow-container">
+
+
+                <div class="mySlides fade">
+                    <h3 style="text-decoration: underline;">SolidWorks Model</h3>
+                    <img src="e96r.jpg" class="slideshow-images">
+                </div>
+
+                <div class="mySlides fade">
+                    <h3 style="text-decoration: underline;">Team Photo</h3>
+                    <img src="Geezer_Group.jpg" class="slideshow-images">
+                </div>
+
+                <div class="mySlides fade">
+                    <h3 style="text-decoration: underline;">Finished Assembly</h3>
+                    <img src="Geezer_Finished.jpg" class="slideshow-images">
+                </div>
+
+
+                <a class="prev" onclick="plusSlides(-1, this.parentNode)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, this.parentNode)">&#10095;</a>
+
+            </div>
+
+            <div></div>
+
+
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1, slideshow2)"></span>
+                <span class="dot" onclick="currentSlide(2, slideshow2)"></span>
+                <span class="dot" onclick="currentSlide(3, slideshow2)"></span>
+            </div>
+        </div> -->
+               
                 </div>
 
 

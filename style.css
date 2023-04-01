@@ -107,10 +107,10 @@ a:visited {
     font-size: 10pt;
 }
 
-/* Setting parameters for endorsement names*/
-.endorsement-name {
-    font-size: 20pt;
-    padding-bottom: 10px;
+.education-schools {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 15pt;
 }
 
 /* Setting parameters for list entries */
@@ -118,6 +118,12 @@ a:visited {
     font-size: 15pt;
     text-align: left;
     text-decoration: none;
+}
+
+/* Setting parameters for endorsement names*/
+.endorsement-name {
+    font-size: 20pt;
+    padding-bottom: 10px;
 }
 
 
@@ -231,6 +237,12 @@ a:visited {
     justify-content: center;
     align-items: center;
     height: inherit;
+}
+
+.slideshow-images {
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0;
 }
 
 .mySlides {
