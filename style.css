@@ -170,6 +170,8 @@ a:visited {
     vertical-align: middle;
     width: 100%;
     margin: 0;
+    padding: 30px;
+    border: 1px solid white;
 }
 
 /* Setting parameters for skill boxes and content */
