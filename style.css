@@ -101,6 +101,12 @@ a:visited {
     background-color: black;
 }
 
+/* Setting parameters for experience block paragraphs */
+.experience-paragraphs {
+    padding-top: 15px;
+    font-size: 13pt;
+}
+
 /* Setting parameters for image subtexting */
 .subtext {
     padding-top: 7px;
@@ -162,7 +168,7 @@ a:visited {
     background-color: black;
 }
 
-/* 2 division vertical grid pattern with space between  ye*/
+/* 2 division vertical grid pattern with space between */
 .rows2 {
     display: grid;
     grid-template-rows: minmax(100px, 500px) 100px 20px;
@@ -247,6 +253,16 @@ a:visited {
     margin: 0;
 }
 
+/* Bordered box to hold images and/or videos */
+.image-boxes {
+    text-aligh: center;
+    vertical-align: middle;
+    width: 100%;
+    margin: 0;
+    padding: 30px;
+    border: 1px solid white;
+}
+
 .mySlides {
     display: none;
 }
@@ -265,6 +281,8 @@ a:visited {
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
+    background-color: dimgray;
+    opacity: 0.5;
 }
 
 /* Position the prev and next buttons on each side */
@@ -302,7 +320,7 @@ a:visited {
 /* Image fading animation */
 .fade {
     animation-name: fade;
-    animation-duration: 1s;
+    animation-duration: 1.5s;
 }
 
 @keyframes fade {
