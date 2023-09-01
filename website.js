@@ -1,5 +1,9 @@
 
 // Making slideshow variables
+var slideShow_Taira = document.getElementById("slideShow_Taira");
+slideShow_Taira.currentSlideIndex = 1;
+showSlides(slideShow_Taira.currentSlideIndex, slideShow_Taira);
+
 var slideShow_E96Planes = document.getElementById("slideShow_E96Planes");
 slideShow_E96Planes.currentSlideIndex = 1;
 showSlides(slideShow_E96Planes.currentSlideIndex, slideShow_E96Planes);
