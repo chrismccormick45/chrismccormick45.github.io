@@ -68,7 +68,7 @@ a:visited {
     z-index: 999;
     background-color: rgba(0, 0, 0, 0.8); /* dark background for visibility */
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: 500px auto 500px;
     border-bottom: 2px solid white;
     text-align: center;
     padding: 10px 0;
@@ -441,6 +441,7 @@ a:visited {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
+
     flex-direction: column;
     align-items: center;
 }
@@ -494,6 +495,86 @@ a:visited {
 
 
 
+
+
+
+.project-slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+}
+
+.project-slide {
+    display: none;
+    animation: fade 1.5s;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid white;
+    border-radius: 12px;
+}
+
+.project-prev, .project-next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    transition: 0.6s ease;
+    background-color: dimgray;
+    opacity: 0.5;
+    border-radius: 3px;
+    z-index: 1000;
+}
+
+.project-next {
+    right: 0;
+}
+
+.project-prev {
+    left: 0;
+}
+
+.project-dot {
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    margin: 0 2px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+    .project-dot.active, .project-dot:hover {
+        background-color: dimgray;
+    }
+
+.project-dot {
+    height: 14px;
+    width: 14px;
+    margin: 0 4px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+    .project-dot.active {
+        background-color: dimgray;
+        transform: scale(1.2);
+    }
+
+    .project-dot.adjacent {
+        opacity: 0.5;
+        transform: scale(0.8);
+    }
+
+
+
 /***********************************************************************/
 /*****                   PARAGRAPH/TEXT FUNCTIONS                  *****/
 /***********************************************************************/
@@ -508,6 +589,8 @@ a:visited {
     line-height: 30px;
     background-color: rgba(0, 0, 0, 0.7);
     border-radius: 12px;
+    overflow: auto;
+    max-height: 100%;
 }
 
 /* Setting parameters for experience block paragraphs */
@@ -538,6 +621,8 @@ a:visited {
     text-align: center;
     vertical-align: middle;
     margin: 0;
+    overflow-y: auto;
+    max-height: 100%;
 }
 
 
@@ -558,35 +643,48 @@ a:visited {
 
 /* Slideshow container */
 .slideshow-container {
-    max-width: 1000px;
+    display: flex;
     position: relative;
     margin: auto;
     justify-content: center;
     align-items: center;
-    height: inherit;
+    height: 100%;
+    width: 100%;
 }
 
 .slideshow-images {
+    max-height: 100%;
     max-width: 100%;
-    max-height: 500px;
-    margin: 0;
+    object-fit: contain;
+    display: block;
+    margin: auto;
+    
 }
 
-/* Bordered box to hold images and/or videos */
 .image-boxes {
     max-width: 800px;
-    width: 100%; 
-    text-align: center;
-    vertical-align: middle;
     width: 100%;
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
     margin: 0;
     padding: 30px;
     border: 1px solid white;
     border-radius: 12px;
+    overflow: hidden; /* hides overflowed images */
+    box-sizing: border-box;
 }
 
+
 .mySlides {
-    display: none;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Next & previous buttons */
@@ -618,6 +716,12 @@ a:visited {
     border-radius: 3px 0 0 3px;
 }
 
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 /* Create black background on next & prev hover */
 .prev:hover, .next:hover {
     background-color: black;
@@ -628,11 +732,18 @@ a:visited {
     cursor: pointer;
     height: 10px;
     width: 10px;
-    margin: 0 2px;
+    margin: 0 5px;
     background-color: white;
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
+}
+
+.dot-container {
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+    display: block;
 }
 
 .active, .dot:hover {
@@ -653,5 +764,10 @@ from {
 to {
     opacity: 1
 }
+
+
+
+
+
 
 }

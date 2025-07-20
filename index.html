@@ -14,7 +14,6 @@
             <div class="nav"><a href="#about">About</a></div>
             <div class="nav"><a href="#experience">Experience</a></div>
             <div class="nav"><a href="#appearances">Media Appearances</a></div>
-            <div class="nav"><a href="#endorsements">Endorsements</a></div>
         </div>
 
         <!-- Intro name and degree -->
@@ -175,568 +174,424 @@
                 <div style="color: transparent">FUSC</div>
                 <h2 class="section-title" style="margin-left: 30px;">Experience</h2>
                 <div class="content-padding">
-                    <div style="border: 1px solid white; border-radius: 20px;">
+                    <div id="projectSlideShow" class="project-slideshow-container">
+
+                        <div class="project-slide fade">
+                            <!-- Taira Lab -->
+                            <div class="columns2-even">
+                                <div class="general-text-boxes">
+                                    <h3 class="experience-titles">Taira Lab: Student Researcher</h3>
+
+                                    <p class="paragraphs">
+                                        Originally starting as an undergraduate research assistant, I have had the privilege of working with Professor Taira since 2023. Being part of Taira Lab has been an incredibly rewarding experience - I'm working on a fascinating
+                                        project alongside the most talented people I've ever met. In collaboration with Professor David Williams and Ph.D. candidate Sai Simon at the Illinois Institute of Technology, I study the flight dynamics of D90, a tailless
+                                        unmanned aerial system (UAS). Currently, my work is focused improving aerodynamic model predictions and evaluating model sensitivity.
+                                    </p>
+
+                                    <p class="paragraphs">
+                                        <a href="https://www.seas.ucla.edu/fluidflow/" target="_blank" class="text-link">[Click here to visit our lab website!]</a>
+                                    </p>
+
+                                </div>
+
+                                <div></div>
+
+                                <div class="slideshow-center">
+
+                                    <!-- Images broken into 3 rows -->
+                                    <div class="image-boxes">
+
+                                        <div id="slideShow_TairaLab" class="slideshow-container">
+
+                                            <!-- Slideshow images with titles -->
+                                            <div class="mySlides fade">
+                                                <h3 style="text-decoration: underline;">D90 Tailles UAS</h3>
+                                                <img src="D90.png" class="slideshow-images">
+                                            </div>
+
+                                            <div class="mySlides fade">
+                                                <h3 style="text-decoration: underline;">D90 Test Flight</h3>
+                                                <img src="D90_Flight.jpg" class="slideshow-images">
+                                            </div>
 
 
-                        <!-- Taira Lab -->
-                        <div class="columns2-even">
-                            <div class="general-text-boxes">
-                                <h3 class="experience-titles">Taira Lab: Student Researcher</h3>
+                                            <!-- Next and prev buttons -->
+                                            <a class="prev" onclick="plusSlides(-1, slideShow_TairaLab)">&#10094;</a>
+                                            <a class="next" onclick="plusSlides(1, slideShow_TairaLab)">&#10095;</a>
 
-                                <p class="paragraphs">
-                                    Originally starting as an undergraduate research assistant, I have had the privilege of working with Professor Taira since 2023. Being part of Taira Lab has been an incredibly rewarding experience - I'm working on a fascinating
-                                    project alongside the most talented people I've ever met. In collaboration with Professor David Williams and Ph.D. candidate Sai Simon at the Illinois Institute of Technology, I study the flight dynamics of D90, a tailless
-                                    unmanned aerial system (UAS). Currently, my work is focused improving aerodynamic model predictions and evaluating model sensitivity.
-                                </p>
+                                            <!-- Image number dots -->
+                                            <div class="dot-container">
+                                                <span class="dot" onclick="currentSlide(1, slideShow_TairaLab)"></span>
+                                                <span class="dot" onclick="currentSlide(2, slideShow_TairaLab)"></span>
+                                            </div>
 
-                                <p class="paragraphs">
-                                    <a href="https://www.seas.ucla.edu/fluidflow/" target="_blank" class="text-link">[Click here to visit our lab website!]</a>
-                                </p>
-
-                            </div>
-
-                            <div></div>
-
-                            <div class="slideshow-center">
-
-                                <!-- Images broken into 3 rows -->
-                                <div class="image-boxes">
-
-                                    <div id="slideShow_TairaLab" class="slideshow-container">
-
-                                        <!-- Slideshow images with titles -->
-                                        <div class="mySlides fade">
-                                            <h3 style="text-decoration: underline;">D90 Tailles UAS</h3>
-                                            <img src="D90.png" class="slideshow-images">
                                         </div>
-
-                                        <div class="mySlides fade">
-                                            <h3 style="text-decoration: underline;">D90 Test Flight</h3>
-                                            <img src="D90_Flight.jpg" class="slideshow-images">
-                                        </div>
-
-
-                                        <!-- Next and prev buttons -->
-                                        <a class="prev" onclick="plusSlides(-1, slideShow_TairaLab)">&#10094;</a>
-                                        <a class="next" onclick="plusSlides(1, slideShow_TairaLab)">&#10095;</a>
-
-                                        <!-- Image number dots -->
-                                        <div style="text-align:center; padding-top: 30px;">
-                                            <span class="dot" onclick="currentSlide(1, slideShow_TairaLab)"></span>
-                                            <span class="dot" onclick="currentSlide(2, slideShow_TairaLab)"></span>
-                                        </div>
-
                                     </div>
                                 </div>
                             </div>
                         </div>
 
 
-                        <!-- CFD entry -->
-                        <div class="columns2-even">
-                            <div class="general-text-boxes">
-                                <h3 class="experience-titles">Incompressible Immersed Boundary CFD Solver</h3>
+                        <div class="project-slide fade">
+                            <!-- CFD entry -->
+                            <div class="columns2-even">
+                                <div class="general-text-boxes">
+                                    <h3 class="experience-titles">Incompressible Immersed Boundary CFD Solver</h3>
 
-                                <p class="paragraphs">
-                                    One of the most rewarding courses I took in graduate school focused on incompressible computational fluid dynamics (CFD). As part of the class, each student developed their own solver
-                                    for a lid-driven cavity flow problem with an immersed boundary. I wrote a report detailing the process of developing my solver and implementing an immersed boundary method, in which I
-                                    compare different finite-differencing and time-stepping schemes, and carefully validate and verify my results.
-                                </p>
+                                    <p class="paragraphs">
+                                        One of the most rewarding courses I took in graduate school focused on incompressible computational fluid dynamics (CFD). As part of the class, each student developed their own solver
+                                        for a lid-driven cavity flow problem with an immersed boundary. I wrote a report detailing the process of developing my solver and implementing an immersed boundary method, in which I
+                                        compare different finite-differencing and time-stepping schemes, and carefully validate and verify my results.
+                                    </p>
 
-                                <p class="paragraphs">
-                                    <a href="IncompressibleCFDReport.pdf" target="_blank" class="text-link">[Click here to take a look!]</a>
-                                </p>
+                                    <p class="paragraphs">
+                                        <a href="IncompressibleCFDReport.pdf" target="_blank" class="text-link">[Click here to take a look!]</a>
+                                    </p>
 
+                                </div>
+                                <div></div>
+
+                                <div class="slideshow-center">
+
+                                    <!-- Images broken into 3 rows -->
+                                    <div class="image-boxes">
+
+                                        <div id="slideShow_CFD" class="slideshow-container">
+
+                                            <!-- Slideshow images with titles -->
+                                            <div class="mySlides fade">
+                                                <h3 style="text-decoration: underline;">Flow Simulation at Re = 400, CFL = 0.5</h3>
+                                                <img src="combinedPlots__129x129_Re400_CFL0.50.png" class="slideshow-images">
+                                            </div>
+
+                                            <div class="mySlides fade">
+                                                <h3 style="text-decoration: underline;">Immersed Boundary Flow Simulation at Re = 400, CFL = 0.5</h3>
+                                                <img src="combinedIMBPlots__129x129_Re400_CFL0.50.png" class="slideshow-images">
+                                            </div>
+
+                                            <!-- Next and prev buttons -->
+                                            <a class="prev" onclick="plusSlides(-1, slideShow_CFD)">&#10094;</a>
+                                            <a class="next" onclick="plusSlides(1, slideShow_CFD)">&#10095;</a>
+
+                                            <!-- Image number dots -->
+                                            <div class="dot-container">
+                                                <span class="dot" onclick="currentSlide(1, slideShow_CFD)"></span>
+                                                <span class="dot" onclick="currentSlide(2, slideShow_CFD)"></span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div></div>
+                        </div>
 
-                            <div class="slideshow-center">
+                        <div class="project-slide fade">
+                            <!-- Silent Night Surveillant entry -->
+                            <div class="columns2-even">
+                                <div class="general-text-boxes">
+                                    <h3 class="experience-titles">Aircraft Design Project</h3>
 
-                                <!-- Images broken into 3 rows -->
-                                <div class="image-boxes">
+                                    <p class="paragraphs">
+                                        One of my favorite classes in graduate school involved designing a full-scale aircraft to meet a specific set of mission requirements. Collaborating with two teammates, we developed the "Silent
+                                        Night Surveillant" - a conceptual surveillance UAV for Santa Claus. The aircraft was designed to launch from Santa's offshore "Christmas Carrier", fly to the UCLA campus, identify and monitor
+                                        a student of interest for 24 hours, and return to the ship for data processing and transmission back to the North Pole.
+                                    </p>
 
-                                    <div id="slideShow_CFD" class="slideshow-container">
+                                    <p class="paragraphs">
+                                        My contributions included selecting key aircraft components such as the engine and payload, as well as developing a Monte Carlo optimization framework to determine the optimal aircraft dimensions
+                                        for our mission profile. I also led development of the guidance, navigation, and control (GNC) system, implementing logic for the UAV to autonomously loiter over UCLA until the target is located,
+                                        then maintain surveillance by circling the target until the mission duration is complete.
+                                    </p>
 
-                                        <!-- Slideshow images with titles -->
-                                        <div class="mySlides fade">
-                                            <h3 style="text-decoration: underline;">Flow Simulation at Re = 400, CFL = 0.5</h3>
-                                            <img src="combinedPlots__129x129_Re400_CFL0.50.png" class="slideshow-images">
+                                    <p class="paragraphs">
+                                        <a href="SilentNightSurveillant_Report.pdf" target="_blank" class="text-link">[Click here to take a look!]</a>
+                                    </p>
+
+                                </div>
+                                <div></div>
+
+                                <div class="slideshow-center">
+
+                                    <!-- Images broken into 3 rows -->
+                                    <div class="image-boxes">
+
+                                        <div id="slideShow_SilentNightSurveillant" class="slideshow-container">
+
+                                            <!-- Slideshow images with titles -->
+                                            <div class="mySlides fade">
+                                                <h3 style="text-decoration: underline;">Silent Night Surveillant UAV</h3>
+                                                <img src="SNS1.png" class="slideshow-images">
+                                            </div>
+
+                                            <div class="mySlides fade">
+                                                <h3 style="text-decoration: underline;">CAD Iso-View</h3>
+                                                <img src="SNS2.png" class="slideshow-images">
+                                            </div>
+
+                                            <div class="mySlides fade">
+                                                <h3 style="text-decoration: underline;">Design Views</h3>
+                                                <img src="SNS3.png" class="slideshow-images">
+                                            </div>
+
+                                            <div class="mySlides fade">
+                                                <h3 style="text-decoration: underline;">Monte Carlo Optimization</h3>
+                                                <img src="OptimizationSNS.png" class="slideshow-images">
+                                            </div>
+
+                                            <div class="mySlides fade">
+                                                <h3 style="text-decoration: underline;">GNC Demo without Target</h3>
+                                                <video class="slideshow-images" controls>
+                                                    <source src="NoTarget_SNS.mp4" type="video/mp4" />
+                                                </video>
+                                            </div>
+
+                                            <div class="mySlides fade">
+                                                <h3 style="text-decoration: underline;">GNC Demo with Target</h3>
+                                                <video class="slideshow-images" controls>
+                                                    <source src="Target_SNS.mp4" type="video/mp4" />
+                                                </video>
+                                            </div>
+
+                                            <!-- Next and prev buttons -->
+                                            <a class="prev" onclick="plusSlides(-1, slideShow_SilentNightSurveillant)">&#10094;</a>
+                                            <a class="next" onclick="plusSlides(1, slideShow_SilentNightSurveillant)">&#10095;</a>
+
+                                            <!-- Image number dots -->
+                                            <div class="dot-container">
+                                                <span class="dot" onclick="currentSlide(1, slideShow_SilentNightSurveillant)"></span>
+                                                <span class="dot" onclick="currentSlide(2, slideShow_SilentNightSurveillant)"></span>
+                                                <span class="dot" onclick="currentSlide(3, slideShow_SilentNightSurveillant)"></span>
+                                                <span class="dot" onclick="currentSlide(4, slideShow_SilentNightSurveillant)"></span>
+                                                <span class="dot" onclick="currentSlide(5, slideShow_SilentNightSurveillant)"></span>
+                                                <span class="dot" onclick="currentSlide(6, slideShow_SilentNightSurveillant)"></span>
+                                            </div>
+
                                         </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-                                        <div class="mySlides fade">
-                                            <h3 style="text-decoration: underline;">Immersed Boundary Flow Simulation at Re = 400, CFL = 0.5</h3>
-                                            <img src="combinedIMBPlots__129x129_Re400_CFL0.50.png" class="slideshow-images">
+                        <div class="project-slide fade">
+                            <!-- Mayfly Mission entry -->
+                            <div class="columns2-even">
+                                <div class="general-text-boxes">
+                                    <h3 class="experience-titles">Spacecraft Design Project</h3>
+
+                                    <p class="paragraphs">
+                                        Another particularly engaging class I took focused on designing a spacecraft for a sample retrieval mission. As part of a 10-person team, I was responsible for the spacecraft's propulsion system.
+                                        Throughout the quarter, I collaborated closely with the mission trajectory, power systems, and thermal systems leads, using an iterative design approach to ensure the spacecraft had sufficient power
+                                        and capability to complete the mission successfully. I conducted trade studies to evaluate the feasibility of chemical versus solar electric propulsion (SEP) systems, ultimately selecting SEP. I then
+                                        evaluated a range of thruster options, analyzing total system mass, specific impulse, power consumption, and thrust in the context of mission constraints to determine the optimal configuration.
+                                    </p>
+
+                                    <p class="paragraphs">
+                                        <a href="MayflyMission_Report.pdf" target="_blank" class="text-link">[Click here to take a look!]</a>
+                                    </p>
+
+                                </div>
+                                <div></div>
+
+                                <div class="slideshow-center">
+
+                                    <!-- Images broken into 3 rows -->
+                                    <div class="image-boxes">
+
+                                        <div id="slideShow_Mayfly" class="slideshow-container">
+
+                                            <!-- Slideshow images with titles -->
+                                            <div class="mySlides fade">
+                                                <h3 style="text-decoration: underline;">Mayfly Spacecraft</h3>
+                                                <img src="Mayfly_Spacecraft.png" class="slideshow-images">
+                                            </div>
+
+                                            <div class="mySlides fade">
+                                                <h3 style="text-decoration: underline;">Front Iso-View</h3>
+                                                <img src="Mayfly_FrontView.png" class="slideshow-images">
+                                            </div>
+
+                                            <div class="mySlides fade">
+                                                <h3 style="text-decoration: underline;">Back Iso-View</h3>
+                                                <img src="Mayfly_BackView.png" class="slideshow-images">
+                                            </div>
+
+                                            <div class="mySlides fade">
+                                                <h3 style="text-decoration: underline;">Propulsion System Specifications</h3>
+                                                <img src="NEXT9a_Specs.png" class="slideshow-images">
+                                            </div>
+
+                                            <div class="mySlides fade">
+                                                <h3 style="text-decoration: underline;">NEXT 9a Ion Thruster</h3>
+                                                <img src="NEXT9a.png" class="slideshow-images">
+                                            </div>
+
+                                            <!-- Next and prev buttons -->
+                                            <a class="prev" onclick="plusSlides(-1, slideShow_Mayfly)">&#10094;</a>
+                                            <a class="next" onclick="plusSlides(1, slideShow_Mayfly)">&#10095;</a>
+
+                                            <!-- Image number dots -->
+                                            <div class="dot-container">
+                                                <span class="dot" onclick="currentSlide(1, slideShow_Mayfly)"></span>
+                                                <span class="dot" onclick="currentSlide(2, slideShow_Mayfly)"></span>
+                                                <span class="dot" onclick="currentSlide(3, slideShow_Mayfly)"></span>
+                                                <span class="dot" onclick="currentSlide(4, slideShow_Mayfly)"></span>
+                                                <span class="dot" onclick="currentSlide(5, slideShow_Mayfly)"></span>
+                                            </div>
+
                                         </div>
-
-                                        <!-- Next and prev buttons -->
-                                        <a class="prev" onclick="plusSlides(-1, slideShow_CFD)">&#10094;</a>
-                                        <a class="next" onclick="plusSlides(1, slideShow_CFD)">&#10095;</a>
-
-                                        <!-- Image number dots -->
-                                        <div style="text-align:center; padding-top: 30px;">
-                                            <span class="dot" onclick="currentSlide(1, slideShow_CFD)"></span>
-                                            <span class="dot" onclick="currentSlide(2, slideShow_CFD)"></span>
-                                        </div>
-
                                     </div>
                                 </div>
                             </div>
                         </div>
 
 
+                        <div class="project-slide fade">
+                            <!-- Autonomous Drone entry -->
+                            <div class="columns2-even">
+                                <div class="general-text-boxes">
+                                    <h3 class="experience-titles">Autonomous Drone Design Project</h3>
 
-                        <!-- Silent Night Surveillant entry -->
-                        <div class="columns2-even">
-                            <div class="general-text-boxes">
-                                <h3 class="experience-titles">Aircraft Design Project</h3>
+                                    <p class="paragraphs">
+                                        In another course, I worked on a team tasked with designing and building an autonomous drone capable of identifying the optimal trajectory through a randomized set of waypoints. I served as the electronics lead, responsible
+                                        for integrating all internal components to ensure stable power distribution and reliable communication across systems. Having previously built my own personal drone, I found this project both exciting and rewarding, as it
+                                        allowed me to apply past lessons and improve upon earlier mistakes.
+                                    </p>
 
-                                <p class="paragraphs">
-                                    One of my favorite classes in graduate school involved designing a full-scale aircraft to meet a specific set of mission requirements. Collaborating with two teammates, we developed the "Silent
-                                    Night Surveillant" - a conceptual surveillance UAV for Santa Claus. The aircraft was designed to launch from Santa's offshore "Christmas Carrier", fly to the UCLA campus, identify and monitor
-                                    a student of interest for 24 hours, and return to the ship for data processing and transmission back to the North Pole.
-                                </p>
+                                    <p class="paragraphs">
+                                        <a href="AutonomousDrone_Report.pdf" target="_blank" class="text-link">[Click here to take a look!]</a>
+                                    </p>
 
-                                <p class="paragraphs">
-                                    My contributions included selecting key aircraft components such as the engine and payload, as well as developing a Monte Carlo optimization framework to determine the optimal aircraft dimensions
-                                    for our mission profile. I also led development of the guidance, navigation, and control (GNC) system, implementing logic for the UAV to autonomously loiter over UCLA until the target is located,
-                                    then maintain surveillance by circling the target until the mission duration is complete.
-                                </p>
+                                </div>
+                                <div></div>
 
-                                <p class="paragraphs">
-                                    <a href="SilentNightSurveillant_Report.pdf" target="_blank" class="text-link">[Click here to take a look!]</a>
-                                </p>
+                                <div class="slideshow-center">
 
-                            </div>
-                            <div></div>
+                                    <!-- Images broken into 3 rows -->
+                                    <div class="image-boxes">
 
-                            <div class="slideshow-center">
+                                        <div id="slideShow_AutonomousDrone" class="slideshow-container">
 
-                                <!-- Images broken into 3 rows -->
-                                <div class="image-boxes">
+                                            <!-- Slideshow images with titles -->
+                                            <div class="mySlides fade">
+                                                <h3 style="text-decoration: underline;">Final CAD Model</h3>
+                                                <img src="AutonomousDrone_CAD.png" class="slideshow-images">
+                                            </div>
 
-                                    <div id="slideShow_SilentNightSurveillant" class="slideshow-container">
+                                            <div class="mySlides fade">
+                                                <h3 style="text-decoration: underline;">Autonomous Drone</h3>
+                                                <img src="AutonomousDrone.png" class="slideshow-images">
+                                            </div>
 
-                                        <!-- Slideshow images with titles -->
-                                        <div class="mySlides fade">
-                                            <h3 style="text-decoration: underline;">Silent Night Surveillant UAV</h3>
-                                            <img src="SNS1.png" class="slideshow-images">
+                                            <div class="mySlides fade">
+                                                <h3 style="text-decoration: underline;">Drone Components</h3>
+                                                <img src="AutonomousDrone_Info.png" class="slideshow-images">
+                                            </div>
+
+                                            <div class="mySlides fade">
+                                                <h3 style="text-decoration: underline;">Drone Component Schematic</h3>
+                                                <img src="AutonomousDrone_BlockDiagram.png" class="slideshow-images">
+                                            </div>
+
+                                            <div class="mySlides fade">
+                                                <h3 style="text-decoration: underline;">Soldering Drone Components</h3>
+                                                <img src="AutonomousDrone_Solder.png" class="slideshow-images">
+                                            </div>
+
+                                            <div class="mySlides fade">
+                                                <h3 style="text-decoration: underline;">Team Photo</h3>
+                                                <img src="AutonomousDrone_TeamPhoto.jpg" class="slideshow-images">
+                                            </div>
+
+                                            <!-- Next and prev buttons -->
+                                            <a class="prev" onclick="plusSlides(-1, slideShow_AutonomousDrone)">&#10094;</a>
+                                            <a class="next" onclick="plusSlides(1, slideShow_AutonomousDrone)">&#10095;</a>
+
+                                            <!-- Image number dots -->
+                                            <div class="dot-container">
+                                                <span class="dot" onclick="currentSlide(1, slideShow_AutonomousDrone)"></span>
+                                                <span class="dot" onclick="currentSlide(2, slideShow_AutonomousDrone)"></span>
+                                                <span class="dot" onclick="currentSlide(3, slideShow_AutonomousDrone)"></span>
+                                                <span class="dot" onclick="currentSlide(4, slideShow_AutonomousDrone)"></span>
+                                                <span class="dot" onclick="currentSlide(5, slideShow_AutonomousDrone)"></span>
+                                                <span class="dot" onclick="currentSlide(6, slideShow_AutonomousDrone)"></span>
+                                            </div>
+
                                         </div>
-
-                                        <div class="mySlides fade">
-                                            <h3 style="text-decoration: underline;">CAD Iso-View</h3>
-                                            <img src="SNS2.png" class="slideshow-images">
-                                        </div>
-
-                                        <div class="mySlides fade">
-                                            <h3 style="text-decoration: underline;">Design Views</h3>
-                                            <img src="SNS3.png" class="slideshow-images">
-                                        </div>
-
-                                        <div class="mySlides fade">
-                                            <h3 style="text-decoration: underline;">Monte Carlo Optimization</h3>
-                                            <img src="OptimizationSNS.png" class="slideshow-images">
-                                        </div>
-
-                                        <div class="mySlides fade">
-                                            <h3 style="text-decoration: underline;">GNC Demo without Target</h3>
-                                            <video class="slideshow-images" controls>
-                                                <source src="NoTarget_SNS.mp4" type="video/mp4" />
-                                            </video>
-                                        </div>
-
-                                        <div class="mySlides fade">
-                                            <h3 style="text-decoration: underline;">GNC Demo with Target</h3>
-                                            <video class="slideshow-images" controls>
-                                                <source src="Target_SNS.mp4" type="video/mp4" />
-                                            </video>
-                                        </div>
-
-                                        <!-- Next and prev buttons -->
-                                        <a class="prev" onclick="plusSlides(-1, slideShow_SilentNightSurveillant)">&#10094;</a>
-                                        <a class="next" onclick="plusSlides(1, slideShow_SilentNightSurveillant)">&#10095;</a>
-
-                                        <!-- Image number dots -->
-                                        <div style="text-align:center; padding-top: 30px;">
-                                            <span class="dot" onclick="currentSlide(1, slideShow_SilentNightSurveillant)"></span>
-                                            <span class="dot" onclick="currentSlide(2, slideShow_SilentNightSurveillant)"></span>
-                                            <span class="dot" onclick="currentSlide(3, slideShow_SilentNightSurveillant)"></span>
-                                            <span class="dot" onclick="currentSlide(4, slideShow_SilentNightSurveillant)"></span>
-                                            <span class="dot" onclick="currentSlide(5, slideShow_SilentNightSurveillant)"></span>
-                                            <span class="dot" onclick="currentSlide(6, slideShow_SilentNightSurveillant)"></span>
-                                        </div>
-
                                     </div>
                                 </div>
                             </div>
                         </div>
 
 
-                        <!-- Mayfly Mission entry -->
-                        <div class="columns2-even">
-                            <div class="general-text-boxes">
-                                <h3 class="experience-titles">Spacecraft Design Project</h3>
+                        <div class="project-slide fade">
+                            <!-- Personal Drone entry -->
+                            <div class="columns2-even">
+                                <div class="general-text-boxes">
+                                    <h3 class="experience-titles">Personal RC Drone Design Project</h3>
 
-                                <p class="paragraphs">
-                                    Another particularly engaging class I took focused on designing a spacecraft for a sample retrieval mission. As part of a 10-person team, I was responsible for the spacecraft's propulsion system.
-                                    Throughout the quarter, I collaborated closely with the mission trajectory, power systems, and thermal systems leads, using an iterative design approach to ensure the spacecraft had sufficient power
-                                    and capability to complete the mission successfully. I conducted trade studies to evaluate the feasibility of chemical versus solar electric propulsion (SEP) systems, ultimately selecting SEP. I then
-                                    evaluated a range of thruster options, analyzing total system mass, specific impulse, power consumption, and thrust in the context of mission constraints to determine the optimal configuration.
-                                </p>
+                                    <p class="paragraphs">
+                                        To explore rotorcraft and gain hands-on experience, I designed and assembled a 5-inch RC drone entirely from scratch. Wanting full control over the frame design, I modeled it in SolidWorks and 3D printed the parts myself.
+                                        During the design process, I conducted extensive research into each individual drone component, learning how characteristics like motor KV rating and battery cell count affect flight performance under different conditions.
+                                        I documented my findings and used them to carefully select and pair components for optimal performance. After assembling and configuring the drone, I test flew it and iteratively redesigned certain parts of the frame that
+                                        needed improvement. I also experimented with various propellers to achieve smoother, more stable flight.
+                                    </p>
 
-                                <p class="paragraphs">
-                                    <a href="MayflyMission_Report.pdf" target="_blank" class="text-link">[Click here to take a look!]</a>
-                                </p>
+                                    <p class="paragraphs">
+                                        I'm currently working on getting my HAM Amateur Radio License, which will allow me to operate a video transmitter (VTX) and mount a camera on the drone. With this, I can stream real-time first-person video during flight.
+                                    </p>
 
-                            </div>
-                            <div></div>
-
-                            <div class="slideshow-center">
-
-                                <!-- Images broken into 3 rows -->
-                                <div class="image-boxes">
-
-                                    <div id="slideShow_Mayfly" class="slideshow-container">
-
-                                        <!-- Slideshow images with titles -->
-                                        <div class="mySlides fade">
-                                            <h3 style="text-decoration: underline;">Mayfly Spacecraft</h3>
-                                            <img src="Mayfly_Spacecraft.png" class="slideshow-images">
-                                        </div>
-
-                                        <div class="mySlides fade">
-                                            <h3 style="text-decoration: underline;">Front Iso-View</h3>
-                                            <img src="Mayfly_FrontView.png" class="slideshow-images">
-                                        </div>
-
-                                        <div class="mySlides fade">
-                                            <h3 style="text-decoration: underline;">Back Iso-View</h3>
-                                            <img src="Mayfly_BackView.png" class="slideshow-images">
-                                        </div>
-
-                                        <div class="mySlides fade">
-                                            <h3 style="text-decoration: underline;">Propulsion System Specifications</h3>
-                                            <img src="NEXT9a_Specs.png" class="slideshow-images">
-                                        </div>
-
-                                        <div class="mySlides fade">
-                                            <h3 style="text-decoration: underline;">NEXT 9a Ion Thruster</h3>
-                                            <img src="NEXT9a.png" class="slideshow-images">
-                                        </div>
-
-                                        <!-- Next and prev buttons -->
-                                        <a class="prev" onclick="plusSlides(-1, slideShow_Mayfly)">&#10094;</a>
-                                        <a class="next" onclick="plusSlides(1, slideShow_Mayfly)">&#10095;</a>
-
-                                        <!-- Image number dots -->
-                                        <div style="text-align:center; padding-top: 30px;">
-                                            <span class="dot" onclick="currentSlide(1, slideShow_Mayfly)"></span>
-                                            <span class="dot" onclick="currentSlide(2, slideShow_Mayfly)"></span>
-                                            <span class="dot" onclick="currentSlide(3, slideShow_Mayfly)"></span>
-                                            <span class="dot" onclick="currentSlide(4, slideShow_Mayfly)"></span>
-                                            <span class="dot" onclick="currentSlide(5, slideShow_Mayfly)"></span>
-                                        </div>
-
-                                    </div>
                                 </div>
-                            </div>
-                        </div>
+                                <div></div>
 
+                                <div class="slideshow-center">
 
+                                    <!-- Images broken into 3 rows -->
+                                    <div class="image-boxes">
 
-                        <!-- Autonomous Drone entry -->
-                        <div class="columns2-even">
-                            <div class="general-text-boxes">
-                                <h3 class="experience-titles">Autonomous Drone Design Project</h3>
+                                        <div id="slideShow_Drone" class="slideshow-container">
 
-                                <p class="paragraphs">
-                                    In another course, I worked on a team tasked with designing and building an autonomous drone capable of identifying the optimal trajectory through a randomized set of waypoints. I served as the electronics lead, responsible
-                                    for integrating all internal components to ensure stable power distribution and reliable communication across systems. Having previously built my own personal drone, I found this project both exciting and rewarding, as it
-                                    allowed me to apply past lessons and improve upon earlier mistakes.
-                                </p>
+                                            <!-- Slideshow images with titles -->
+                                            <div class="mySlides fade">
+                                                <h3 style="text-decoration: underline;">CAD Exploded View</h3>
+                                                <img src="Drone_Exploded.jpg" class="slideshow-images">
+                                            </div>
 
-                                <p class="paragraphs">
-                                    <a href="AutonomousDrone_Report.pdf" target="_blank" class="text-link">[Click here to take a look!]</a>
-                                </p>
+                                            <div class="mySlides fade">
+                                                <h3 style="text-decoration: underline;">Drone Components</h3>
+                                                <img src="Drone1.jpg" class="slideshow-images">
+                                            </div>
 
-                            </div>
-                            <div></div>
+                                            <div class="mySlides fade">
+                                                <h3 style="text-decoration: underline;">Motors, Stack, & Antenna Mounted</h3>
+                                                <img src="Drone2.jpg" class="slideshow-images">
+                                            </div>
 
-                            <div class="slideshow-center">
+                                            <div class="mySlides fade">
+                                                <h3 style="text-decoration: underline;">Finished Drone</h3>
+                                                <img src="Drone3.jpg" class="slideshow-images">
+                                            </div>
 
-                                <!-- Images broken into 3 rows -->
-                                <div class="image-boxes">
+                                            <div class="mySlides fade">
+                                                <h3 style="text-decoration: underline;">Drone In Flight</h3>
+                                                <video class="slideshow-images" controls>
+                                                    <source src="Drone_Vid.mov" type="video/mp4" />
+                                                </video>
+                                            </div>
 
-                                    <div id="slideShow_AutonomousDrone" class="slideshow-container">
+                                            <!-- Next and prev buttons -->
+                                            <a class="prev" onclick="plusSlides(-1, slideShow_Drone)">&#10094;</a>
+                                            <a class="next" onclick="plusSlides(1, slideShow_Drone)">&#10095;</a>
 
-                                        <!-- Slideshow images with titles -->
-                                        <div class="mySlides fade">
-                                            <h3 style="text-decoration: underline;">Final CAD Model</h3>
-                                            <img src="AutonomousDrone_CAD.png" class="slideshow-images">
+                                            <!-- Image number dots -->
+                                            <div class="dot-container">
+                                                <span class="dot" onclick="currentSlide(1, slideShow_Drone)"></span>
+                                                <span class="dot" onclick="currentSlide(2, slideShow_Drone)"></span>
+                                                <span class="dot" onclick="currentSlide(3, slideShow_Drone)"></span>
+                                                <span class="dot" onclick="currentSlide(4, slideShow_Drone)"></span>
+                                                <span class="dot" onclick="currentSlide(5, slideShow_Drone)"></span>
+                                            </div>
+
                                         </div>
-
-                                        <div class="mySlides fade">
-                                            <h3 style="text-decoration: underline;">Autonomous Drone</h3>
-                                            <img src="AutonomousDrone.png" class="slideshow-images">
-                                        </div>
-
-                                        <div class="mySlides fade">
-                                            <h3 style="text-decoration: underline;">Drone Components</h3>
-                                            <img src="AutonomousDrone_Info.png" class="slideshow-images">
-                                        </div>
-
-                                        <div class="mySlides fade">
-                                            <h3 style="text-decoration: underline;">Drone Component Schematic</h3>
-                                            <img src="AutonomousDrone_BlockDiagram.png" class="slideshow-images">
-                                        </div>
-
-                                        <div class="mySlides fade">
-                                            <h3 style="text-decoration: underline;">Soldering Drone Components</h3>
-                                            <img src="AutonomousDrone_Solder.png" class="slideshow-images">
-                                        </div>
-
-                                        <div class="mySlides fade">
-                                            <h3 style="text-decoration: underline;">Team Photo</h3>
-                                            <img src="AutonomousDrone_TeamPhoto.jpg" class="slideshow-images">
-                                        </div>
-
-                                        <!-- Next and prev buttons -->
-                                        <a class="prev" onclick="plusSlides(-1, slideShow_AutonomousDrone)">&#10094;</a>
-                                        <a class="next" onclick="plusSlides(1, slideShow_AutonomousDrone)">&#10095;</a>
-
-                                        <!-- Image number dots -->
-                                        <div style="text-align:center; padding-top: 30px;">
-                                            <span class="dot" onclick="currentSlide(1, slideShow_AutonomousDrone)"></span>
-                                            <span class="dot" onclick="currentSlide(2, slideShow_AutonomousDrone)"></span>
-                                            <span class="dot" onclick="currentSlide(3, slideShow_AutonomousDrone)"></span>
-                                            <span class="dot" onclick="currentSlide(4, slideShow_AutonomousDrone)"></span>
-                                            <span class="dot" onclick="currentSlide(5, slideShow_AutonomousDrone)"></span>
-                                            <span class="dot" onclick="currentSlide(6, slideShow_AutonomousDrone)"></span>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-
-                        <!-- Personal Drone entry -->
-                        <div class="columns2-even">
-                            <div class="general-text-boxes">
-                                <h3 class="experience-titles">Personal RC Drone Design Project</h3>
-
-                                <p class="paragraphs">
-                                    To explore rotorcraft and gain hands-on experience, I designed and assembled a 5-inch RC drone entirely from scratch. Wanting full control over the frame design, I modeled it in SolidWorks and 3D printed the parts myself.
-                                    During the design process, I conducted extensive research into each individual drone component, learning how characteristics like motor KV rating and battery cell count affect flight performance under different conditions.
-                                    I documented my findings and used them to carefully select and pair components for optimal performance. After assembling and configuring the drone, I test flew it and iteratively redesigned certain parts of the frame that
-                                    needed improvement. I also experimented with various propellers to achieve smoother, more stable flight.
-                                </p>
-
-                                <p class="paragraphs">
-                                    I'm currently working on getting my HAM Amateur Radio License, which will allow me to operate a video transmitter (VTX) and mount a camera on the drone. With this, I can stream real-time first-person video during flight.
-                                </p>
-
-                            </div>
-                            <div></div>
-
-                            <div class="slideshow-center">
-
-                                <!-- Images broken into 3 rows -->
-                                <div class="image-boxes">
-
-                                    <div id="slideShow_Drone" class="slideshow-container">
-
-                                        <!-- Slideshow images with titles -->
-                                        <div class="mySlides fade">
-                                            <h3 style="text-decoration: underline;">CAD Exploded View</h3>
-                                            <img src="Drone_Exploded.jpg" class="slideshow-images">
-                                        </div>
-
-                                        <div class="mySlides fade">
-                                            <h3 style="text-decoration: underline;">Drone Components</h3>
-                                            <img src="Drone1.jpg" class="slideshow-images">
-                                        </div>
-
-                                        <div class="mySlides fade">
-                                            <h3 style="text-decoration: underline;">Motors, Stack, & Antenna Mounted</h3>
-                                            <img src="Drone2.jpg" class="slideshow-images">
-                                        </div>
-
-                                        <div class="mySlides fade">
-                                            <h3 style="text-decoration: underline;">Finished Drone</h3>
-                                            <img src="Drone3.jpg" class="slideshow-images">
-                                        </div>
-
-                                        <div class="mySlides fade">
-                                            <h3 style="text-decoration: underline;">Drone In Flight</h3>
-                                            <video class="slideshow-images" controls>
-                                                <source src="Drone_Vid.mov" type="video/mp4" />
-                                            </video>
-                                        </div>
-
-                                        <!-- Next and prev buttons -->
-                                        <a class="prev" onclick="plusSlides(-1, slideShow_Drone)">&#10094;</a>
-                                        <a class="next" onclick="plusSlides(1, slideShow_Drone)">&#10095;</a>
-
-                                        <!-- Image number dots -->
-                                        <div style="text-align:center; padding-top: 30px;">
-                                            <span class="dot" onclick="currentSlide(1, slideShow_Drone)"></span>
-                                            <span class="dot" onclick="currentSlide(2, slideShow_Drone)"></span>
-                                            <span class="dot" onclick="currentSlide(3, slideShow_Drone)"></span>
-                                            <span class="dot" onclick="currentSlide(4, slideShow_Drone)"></span>
-                                            <span class="dot" onclick="currentSlide(5, slideShow_Drone)"></span>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-
-                        <!-- Plane Design entry -->
-                        <div class="columns2-even">
-                            <div class="general-text-boxes">
-                                <h3 class="experience-titles">RC Airplane Design Project</h3>
-
-                                <p class="paragraphs">
-                                    During one quarter at UCLA, I led a team in designing, building, and flying a remote-controlled airplane. After selecting a general aircraft configuration,
-                                    we used school-provided MATLAB code to estimate key parameters such as total weight, dimensions, and wingspan of our aircraft. Using these values, along with aerodynamic
-                                    data like lift and drag coefficients, we carefully selected airfoils for the wing and stabilizers that aligned with our performance goals.
-                                    We modeled and assembled the entire aircraft in SolidWorks, continually refining components throughout the 10-week quarter based on testing and performance evaluations.
-                                    As we tested different assemblies, we identified and implemented design improvements that significantly enhanced flight stability and efficiency.
-                                </p>
-
-                                <p class="paragraphs">
-                                    In the end, watching our airplane take flight and achieve record-setting performance was an incredibly rewarding culmination of our team's hard work and engineering decisions.
-                                    We won the class award for designing the fastest airplane.
-                                </p>
-
-                            </div>
-
-                            <div></div>
-
-                            <div class="slideshow-center">
-
-                                <!-- Images broken into 3 rows -->
-                                <div class="image-boxes">
-
-                                    <div id="slideShow_Plane" class="slideshow-container">
-
-                                        <!-- Slideshow images with titles -->
-                                        <div class="mySlides fade">
-                                            <h3 style="text-decoration: underline;">CAD Model</h3>
-                                            <img src="Geezer_Mode.jpg" class="slideshow-images">
-                                        </div>
-
-                                        <div class="mySlides fade">
-                                            <h3 style="text-decoration: underline;">CAD Exploded View</h3>
-                                            <img src="Geezer_Mode_Exploded.jpg" class="slideshow-images">
-                                        </div>
-
-                                        <div class="mySlides fade">
-                                            <h3 style="text-decoration: underline;">Finished Assembly</h3>
-                                            <img src="Geezer_Finished.jpg" class="slideshow-images">
-                                        </div>
-
-                                        <div class="mySlides fade">
-                                            <h3 style="text-decoration: underline;">Team Photo</h3>
-                                            <img src="Geezer_Group.jpg" class="slideshow-images">
-                                        </div>
-
-                                        <div class="mySlides fade">
-                                            <h3 style="text-decoration: underline;">Plane in Flight</h3>
-                                            <img src="Geezer_Flight.jpg" class="slideshow-images">
-                                        </div>
-
-                                        <!-- Next and prev buttons -->
-                                        <a class="prev" onclick="plusSlides(-1, slideShow_Plane)">&#10094;</a>
-                                        <a class="next" onclick="plusSlides(1, slideShow_Plane)">&#10095;</a>
-
-                                        <!-- Image number dots -->
-                                        <div style="text-align:center; padding-top: 30px;">
-                                            <span class="dot" onclick="currentSlide(1, slideShow_Plane)"></span>
-                                            <span class="dot" onclick="currentSlide(2, slideShow_Plane)"></span>
-                                            <span class="dot" onclick="currentSlide(3, slideShow_Plane)"></span>
-                                            <span class="dot" onclick="currentSlide(4, slideShow_Plane)"></span>
-                                            <span class="dot" onclick="currentSlide(5, slideShow_Plane)"></span>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <!-- Rocket Desing entry -->
-                        <div class="columns2-even">
-                            <div class="general-text-boxes">
-                                <h3 class="experience-titles">Rocket Design Project</h3>
-
-                                <p class="paragraphs">
-                                    During another quarter at UCLA, I took part in a voluntary, hands-on rocket engineering project where students collaborated in teams to design, build, and launch two solid motor rockets. Our first
-                                    rocket used a C-class motor, while the second was powered by a stronger G-class motor.
-                                </p>
-
-                                <p class="paragraphs">
-                                    Each team member conducted independent research and contributed unique ideas to each of our designs. We experimented with different materials and iterated on our prototypes based on test results.
-                                    Our first rocket was fully 3D printed, while the second incorporated fiberglass and wood to reduce weight and increase performance. After analyzing the outcome of our first launch and making key
-                                    design improvements, our second rocket exceeded expectations - reaching an apogee of approximately 3,200 feet. This rocket is shown in the images to the right.
-                                </p>
-
-                            </div>
-
-                            <div></div>
-
-                            <div class="slideshow-center">
-                                <!-- Images broken into 3 rows -->
-
-                                <div class="image-boxes">
-
-                                    <div id="slideShow_Rocket" class="slideshow-container">
-
-                                        <!-- Slideshow images with titles -->
-                                        <div class="mySlides fade">
-                                            <h3 style="text-decoration: underline;">CAD Model</h3>
-                                            <img src="SolidWorksRocket.jpg" class="slideshow-images">
-                                        </div>
-
-                                        <div class="mySlides fade">
-                                            <h3 style="text-decoration: underline;">Setting Rocket Up on Launch Pad</h3>
-                                            <img src="setting_up.png" class="slideshow-images">
-                                        </div>
-
-                                        <div class="mySlides fade">
-                                            <h3 style="text-decoration: underline;">Finished Rocket on Launch Pad</h3>
-                                            <img src="launchpad.png" class="slideshow-images">
-                                        </div>
-
-                                        <div class="mySlides fade">
-                                            <h3 style="text-decoration: underline;">Rocket Launch</h3>
-                                            <video class="slideshow-images" controls>
-                                                <source src="launch.mov" type="video/mp4" />
-                                            </video>
-                                        </div>
-
-                                        <div class="mySlides fade">
-                                            <h3 style="text-decoration: underline;">Flight Data</h3>
-                                            <img src="flight_data.png" class="slideshow-images">
-                                            <h4>Orange Line = Accel. &emsp; Black Line = Alt. &emsp; Red Line = Vel.</h4>
-                                        </div>
-
-                                        <!-- Next and prev buttons -->
-                                        <a class="prev" onclick="plusSlides(-1, slideShow_Rocket)">&#10094;</a>
-                                        <a class="next" onclick="plusSlides(1, slideShow_Rocket)">&#10095;</a>
-
-                                        <!-- Image number dots -->
-                                        <div style="text-align:center; padding-top: 30px;">
-                                            <span class="dot" onclick="currentSlide(1, slideShow_Rocket)"></span>
-                                            <span class="dot" onclick="currentSlide(2, slideShow_Rocket)"></span>
-                                            <span class="dot" onclick="currentSlide(3, slideShow_Rocket)"></span>
-                                            <span class="dot" onclick="currentSlide(4, slideShow_Rocket)"></span>
-                                            <span class="dot" onclick="currentSlide(5, slideShow_Rocket)"></span>
-                                        </div>
-
                                     </div>
                                 </div>
                             </div>
@@ -744,86 +599,259 @@
 
 
 
-                        <!-- Misc. 3D Printing -->
-                        <div class="columns2-even">
-                            <div class="general-text-boxes">
-                                <h3 class="experience-titles">Misc. 3D Printing Projects </h3>
+                        <div class="project-slide fade">
+                            <!-- Plane Design entry -->
+                            <div class="columns2-even">
+                                <div class="general-text-boxes">
+                                    <h3 class="experience-titles">RC Airplane Design Project</h3>
 
-                                <p class="paragraphs">
-                                    In Taira Lab, I also serve as the go-to person for 3D printing. In addition to creating educational prints for community outreach events - such as car models to insert in a small wind tunnel - I also produce 3D-printed
-                                    visualizations of simulated wing flows from data provided by my colleagues.
-                                </p>
+                                    <p class="paragraphs">
+                                        During one quarter at UCLA, I led a team in designing, building, and flying a remote-controlled airplane. After selecting a general aircraft configuration,
+                                        we used school-provided MATLAB code to estimate key parameters such as total weight, dimensions, and wingspan of our aircraft. Using these values, along with aerodynamic
+                                        data like lift and drag coefficients, we carefully selected airfoils for the wing and stabilizers that aligned with our performance goals.
+                                        We modeled and assembled the entire aircraft in SolidWorks, continually refining components throughout the 10-week quarter based on testing and performance evaluations.
+                                        As we tested different assemblies, we identified and implemented design improvements that significantly enhanced flight stability and efficiency.
+                                    </p>
 
-                                <p class="paragraphs">
-                                    To do this, I developed a set of MATLAB functions that convert CFD simulation data into 3D-printable models. Once the simulation data is imported, flow information is interpolated onto a fine 3D mesh grid. I remove
-                                    any discontinuities in the flow and then project velocity data as color onto the surface of the generated structure. The final result is saved as a colored .obj file, ready for 3D printing.
-                                </p>
+                                    <p class="paragraphs">
+                                        In the end, watching our airplane take flight and achieve record-setting performance was an incredibly rewarding culmination of our team's hard work and engineering decisions.
+                                        We won the class award for designing the fastest airplane.
+                                    </p>
 
-                                <p class="paragraphs">
-                                    Using my personal 3D printer, I've produced several prototypes, allowing me to fine-tune the parameters in my scripts to ensure the cleanest possible prints. This process has also helped me gain lots of experience
-                                    in 3D printing, maintenance, and troubleshooting common print errors. The images to the right show completed colored models of flow simulations over both swept and straight wings.
-                                </p>
+                                </div>
 
-                            </div>
+                                <div></div>
 
-                            <div></div>
+                                <div class="slideshow-center">
 
-                            <div class="slideshow-center">
+                                    <!-- Images broken into 3 rows -->
+                                    <div class="image-boxes">
 
-                                <!-- Images broken into 3 rows -->
-                                <div class="image-boxes">
+                                        <div id="slideShow_Plane" class="slideshow-container">
 
-                                    <div id="slideShow_Misc" class="slideshow-container">
+                                            <!-- Slideshow images with titles -->
+                                            <div class="mySlides fade">
+                                                <h3 style="text-decoration: underline;">CAD Model</h3>
+                                                <img src="Geezer_Mode.jpg" class="slideshow-images">
+                                            </div>
 
-                                        <!-- Slideshow images with titles -->
-                                        <div class="mySlides fade">
-                                            <h3 style="text-decoration: underline;">Swept Wing Flow</h3>
-                                            <img src="swept.jpg" class="slideshow-images">
+                                            <div class="mySlides fade">
+                                                <h3 style="text-decoration: underline;">CAD Exploded View</h3>
+                                                <img src="Geezer_Mode_Exploded.jpg" class="slideshow-images">
+                                            </div>
+
+                                            <div class="mySlides fade">
+                                                <h3 style="text-decoration: underline;">Finished Assembly</h3>
+                                                <img src="Geezer_Finished.jpg" class="slideshow-images">
+                                            </div>
+
+                                            <div class="mySlides fade">
+                                                <h3 style="text-decoration: underline;">Team Photo</h3>
+                                                <img src="Geezer_Group.jpg" class="slideshow-images">
+                                            </div>
+
+                                            <div class="mySlides fade">
+                                                <h3 style="text-decoration: underline;">Plane in Flight</h3>
+                                                <img src="Geezer_Flight.jpg" class="slideshow-images">
+                                            </div>
+
+                                            <!-- Next and prev buttons -->
+                                            <a class="prev" onclick="plusSlides(-1, slideShow_Plane)">&#10094;</a>
+                                            <a class="next" onclick="plusSlides(1, slideShow_Plane)">&#10095;</a>
+
+                                            <!-- Image number dots -->
+                                            <div class="dot-container">
+                                                <span class="dot" onclick="currentSlide(1, slideShow_Plane)"></span>
+                                                <span class="dot" onclick="currentSlide(2, slideShow_Plane)"></span>
+                                                <span class="dot" onclick="currentSlide(3, slideShow_Plane)"></span>
+                                                <span class="dot" onclick="currentSlide(4, slideShow_Plane)"></span>
+                                                <span class="dot" onclick="currentSlide(5, slideShow_Plane)"></span>
+                                            </div>
+
                                         </div>
-
-                                        <div class="mySlides fade">
-                                            <h3 style="text-decoration: underline;">Straight Wing Flow</h3>
-                                            <img src="straight.jpg" class="slideshow-images">
-                                        </div>
-
-                                        <!-- Next and prev buttons -->
-                                        <a class="prev" onclick="plusSlides(-1, slideShow_Misc)">&#10094;</a>
-                                        <a class="next" onclick="plusSlides(1, slideShow_Misc)">&#10095;</a>
-
-                                        <!-- Image number dots -->
-                                        <div style="text-align:center; padding-top: 30px;">
-                                            <span class="dot" onclick="currentSlide(1, slideShow_Misc)"></span>
-                                            <span class="dot" onclick="currentSlide(2, slideShow_Misc)"></span>
-                                        </div>
-
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- Design Build Fly -->
-                        <div class="columns2-even">
-                            <div class="general-text-boxes">
-                                <h3 class="experience-titles">Design, Build, Fly at UCLA</h3>
 
-                                <p class="paragraphs">
-                                    At UCLA, I joined the Design/Build/Fly (DBF) team, a student-run organization that designs and builds a remote-controlled airplane for the annual AIAA DBF Competition.
-                                    I initially contributed to the aerodynamics team, using SolidWorks, SimScale, and MATLAB to run CFD simulations and analyze performance data. Over time, I transitioned
-                                    to the manufacturing team, where I found the hands-on work more engaging and accessible. There, I helped with the overall aircraft design and assisted in assembling the
-                                    stabilizers. Our efforts culminated in a strong performance at the competition, where UCLA placed 15th out of 81 teams - our best finish to date.
-                                </p>
+                        <div class="project-slide fade">
+                            <!-- Rocket Desing entry -->
+                            <div class="columns2-even">
+                                <div class="general-text-boxes">
+                                    <h3 class="experience-titles">Rocket Design Project</h3>
+
+                                    <p class="paragraphs">
+                                        During another quarter at UCLA, I took part in a voluntary, hands-on rocket engineering project where students collaborated in teams to design, build, and launch two solid motor rockets. Our first
+                                        rocket used a C-class motor, while the second was powered by a stronger G-class motor.
+                                    </p>
+
+                                    <p class="paragraphs">
+                                        Each team member conducted independent research and contributed unique ideas to each of our designs. We experimented with different materials and iterated on our prototypes based on test results.
+                                        Our first rocket was fully 3D printed, while the second incorporated fiberglass and wood to reduce weight and increase performance. After analyzing the outcome of our first launch and making key
+                                        design improvements, our second rocket exceeded expectations - reaching an apogee of approximately 3,200 feet. This rocket is shown in the images to the right.
+                                    </p>
+
+                                </div>
+
+                                <div></div>
+
+                                <div class="slideshow-center">
+                                    <!-- Images broken into 3 rows -->
+
+                                    <div class="image-boxes">
+
+                                        <div id="slideShow_Rocket" class="slideshow-container">
+
+                                            <!-- Slideshow images with titles -->
+                                            <div class="mySlides fade">
+                                                <h3 style="text-decoration: underline;">CAD Model</h3>
+                                                <img src="SolidWorksRocket.jpg" class="slideshow-images">
+                                            </div>
+
+                                            <div class="mySlides fade">
+                                                <h3 style="text-decoration: underline;">Setting Rocket Up on Launch Pad</h3>
+                                                <img src="setting_up.png" class="slideshow-images">
+                                            </div>
+
+                                            <div class="mySlides fade">
+                                                <h3 style="text-decoration: underline;">Finished Rocket on Launch Pad</h3>
+                                                <img src="launchpad.png" class="slideshow-images">
+                                            </div>
+
+                                            <div class="mySlides fade">
+                                                <h3 style="text-decoration: underline;">Rocket Launch</h3>
+                                                <video class="slideshow-images" controls>
+                                                    <source src="launch.mov" type="video/mp4" />
+                                                </video>
+                                            </div>
+
+                                            <div class="mySlides fade">
+                                                <h3 style="text-decoration: underline;">Flight Data</h3>
+                                                <img src="flight_data.png" class="slideshow-images">
+                                                <h4>Orange Line = Accel. &emsp; Black Line = Alt. &emsp; Red Line = Vel.</h4>
+                                            </div>
+
+                                            <!-- Next and prev buttons -->
+                                            <a class="prev" onclick="plusSlides(-1, slideShow_Rocket)">&#10094;</a>
+                                            <a class="next" onclick="plusSlides(1, slideShow_Rocket)">&#10095;</a>
+
+                                            <!-- Image number dots -->
+                                            <div class="dot-container">
+                                                <span class="dot" onclick="currentSlide(1, slideShow_Rocket)"></span>
+                                                <span class="dot" onclick="currentSlide(2, slideShow_Rocket)"></span>
+                                                <span class="dot" onclick="currentSlide(3, slideShow_Rocket)"></span>
+                                                <span class="dot" onclick="currentSlide(4, slideShow_Rocket)"></span>
+                                                <span class="dot" onclick="currentSlide(5, slideShow_Rocket)"></span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-slide fade">
+                            <!-- Misc. 3D Printing -->
+                            <div class="columns2-even">
+                                <div class="general-text-boxes">
+                                    <h3 class="experience-titles">Misc. 3D Printing Projects </h3>
+
+                                    <p class="paragraphs">
+                                        In Taira Lab, I also serve as the go-to person for 3D printing. In addition to creating educational prints for community outreach events - such as car models to insert in a small wind tunnel - I also produce 3D-printed
+                                        visualizations of simulated wing flows from data provided by my colleagues.
+                                    </p>
+
+                                    <p class="paragraphs">
+                                        To do this, I developed a set of MATLAB functions that convert CFD simulation data into 3D-printable models. Once the simulation data is imported, flow information is interpolated onto a fine 3D mesh grid. I remove
+                                        any discontinuities in the flow and then project velocity data as color onto the surface of the generated structure. The final result is saved as a colored .obj file, ready for 3D printing.
+                                    </p>
+
+                                    <p class="paragraphs">
+                                        Using my personal 3D printer, I've produced several prototypes, allowing me to fine-tune the parameters in my scripts to ensure the cleanest possible prints. This process has also helped me gain lots of experience
+                                        in 3D printing, maintenance, and troubleshooting common print errors. The images to the right show completed colored models of flow simulations over both swept and straight wings.
+                                    </p>
+
+                                </div>
+
+                                <div></div>
+
+                                <div class="slideshow-center">
+
+                                    <!-- Images broken into 3 rows -->
+                                    <div class="image-boxes">
+
+                                        <div id="slideShow_Misc" class="slideshow-container">
+
+                                            <!-- Slideshow images with titles -->
+                                            <div class="mySlides fade">
+                                                <h3 style="text-decoration: underline;">Swept Wing Flow</h3>
+                                                <img src="swept.jpg" class="slideshow-images">
+                                            </div>
+
+                                            <div class="mySlides fade">
+                                                <h3 style="text-decoration: underline;">Straight Wing Flow</h3>
+                                                <img src="straight.jpg" class="slideshow-images">
+                                            </div>
+
+                                            <!-- Next and prev buttons -->
+                                            <a class="prev" onclick="plusSlides(-1, slideShow_Misc)">&#10094;</a>
+                                            <a class="next" onclick="plusSlides(1, slideShow_Misc)">&#10095;</a>
+
+                                            <!-- Image number dots -->
+                                            <div class="dot-container">
+                                                <span class="dot" onclick="currentSlide(1, slideShow_Misc)"></span>
+                                                <span class="dot" onclick="currentSlide(2, slideShow_Misc)"></span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="project-slide fade">
+                            <!-- Design Build Fly -->
+                            <div class="columns2-even">
+                                <div class="general-text-boxes">
+                                    <h3 class="experience-titles">Design, Build, Fly at UCLA</h3>
+
+                                    <p class="paragraphs">
+                                        At UCLA, I joined the Design/Build/Fly (DBF) team, a student-run organization that designs and builds a remote-controlled airplane for the annual AIAA DBF Competition.
+                                        I initially contributed to the aerodynamics team, using SolidWorks, SimScale, and MATLAB to run CFD simulations and analyze performance data. Over time, I transitioned
+                                        to the manufacturing team, where I found the hands-on work more engaging and accessible. There, I helped with the overall aircraft design and assisted in assembling the
+                                        stabilizers. Our efforts culminated in a strong performance at the competition, where UCLA placed 15th out of 81 teams - our best finish to date.
+                                    </p>
+
+                                </div>
+
+                                <div></div>
+
+                                <div class="center-photo">
+                                    <img class="general-photo"
+                                         src="dbf_banner.jpg"
+                                         alt="UCLA DBF" />
+                                    </img>
+                                </div>
 
                             </div>
+                        </div>
 
-                            <div></div>
+                        <a class="project-prev" onclick="plusProjectSlides(-1)">&#10094;</a>
+                        <a class="project-next" onclick="plusProjectSlides(1)">&#10095;</a>
 
-                            <div class="center-photo">
-                                <img class="general-photo"
-                                     src="dbf_banner.jpg"
-                                     alt="UCLA DBF" />
-                                </img>
-                            </div>
-
+                        <div class="dot-container">
+                            <span class="project-dot" onclick="currentProjectSlide(1)"></span>
+                            <span class="project-dot" onclick="currentProjectSlide(2)"></span>
+                            <span class="project-dot" onclick="currentProjectSlide(3)"></span>
+                            <span class="project-dot" onclick="currentProjectSlide(4)"></span>
+                            <span class="project-dot" onclick="currentProjectSlide(5)"></span>
+                            <span class="project-dot" onclick="currentProjectSlide(6)"></span>
+                            <span class="project-dot" onclick="currentProjectSlide(7)"></span>
+                            <span class="project-dot" onclick="currentProjectSlide(8)"></span>
+                            <span class="project-dot" onclick="currentProjectSlide(9)"></span>
+                            <span class="project-dot" onclick="currentProjectSlide(10)"></span>
                         </div>
 
                     </div>
@@ -858,47 +886,6 @@
 
             </section>
 
-
-
-
-
-
-
-            <!-- Celebrity Endorsements Block -->
-            <section class="endorsements-section" style="padding-top: 35%;">
-                <h1 id="endorsements"></h1>
-                <div style="color: transparent">FUSC</div>
-                <h2 class="section-title">Celebrity Endorsements</h2>
-
-                <div class="endorsements-grid">
-                    <div class="endorsements-card">
-                        <a href="https://en.wikipedia.org/wiki/Joey_Chestnut" target="_blank" rel="noopener noreferrer">
-                            <img src="Chestnut.jpg" alt="Joey Chestnut" />
-                        </a>
-                        <h3 class="endorsements-name">Joey Chestnut</h3>
-                        <p class="endorsements-subtext">- 16x Hotdog eating world champion</p>
-                    </div>
-
-                    <div class="endorsements-card">
-                        <video controls>
-                            <source src="Perry_Caravello.mp4" type="video/mp4" />
-                            Sorry, your browser doesn't support embedded videos.
-                        </video>
-                        <h3 class="endorsements-name">Perry "Stone Fury" Caravello</h3>
-                        <p class="endorsements-subtext">- 2003 Van Nuys Unfinished Film Festival Palme D'or award winner</p>
-                        <p class="endorsements-subtext">- Former member of the "Big 3"</p>
-                    </div>
-
-                    <div class="endorsements-card">
-                        <a href="https://en.wikipedia.org/wiki/Duane_Chapman" target="_blank" rel="noopener noreferrer">
-                            <img src="DogBountyHunter.jpeg" alt="Dog the Bounty Hunter" />
-                        </a>
-                        <h3 class="endorsements-name">Dog the Bounty Hunter</h3>
-                        <p class="endorsements-subtext">- Over 10,000 fugitives captured</p>
-                        <p class="endorsements-subtext">- New York Times best-selling author</p>
-                    </div>
-                </div>
-            </section>
 
 
             <!-- Auto scroll to top -->
