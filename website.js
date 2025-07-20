@@ -41,6 +41,40 @@ var slideShow_Rocket = document.getElementById("slideShow_Rocket");
 slideShow_Rocket.currentSlideIndex = 1;
 showSlides(slideShow_Rocket.currentSlideIndex, slideShow_Rocket);
 
+// Project-level slideshow variables
+var projectSlideIndex = 1;
+showProjectSlides(projectSlideIndex);
+
+function plusProjectSlides(n) {
+    showProjectSlides(projectSlideIndex += n);
+}
+
+function currentProjectSlide(n) {
+    showProjectSlides(projectSlideIndex = n);
+}
+
+function showProjectSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("project-slide");
+    let dots = document.getElementsByClassName("project-dot");
+
+    if (n > slides.length) { projectSlideIndex = 1; }
+    if (n < 1) { projectSlideIndex = slides.length; }
+
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+
+    slides[projectSlideIndex - 1].style.display = "block";
+    if (dots[projectSlideIndex - 1]) {
+        dots[projectSlideIndex - 1].className += " active";
+    }
+}
+
 // Functions to progress slide show
 function plusSlides(n, slideshow)
 {
