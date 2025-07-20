@@ -644,10 +644,11 @@ a:visited {
 /* Slideshow container */
 .slideshow-container {
     display: flex;
-    position: relative;
-    margin: auto;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
+    margin: auto;
     height: 100%;
     width: 100%;
 }
@@ -664,43 +665,68 @@ a:visited {
 .image-boxes {
     max-width: 800px;
     width: 100%;
-    height: 900px;
+    height: 915px;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     position: relative;
     text-align: center;
-    margin: 0;
     padding: 30px;
     border: 1px solid white;
     border-radius: 12px;
-    overflow: hidden; /* hides overflowed images */
+    overflow: hidden;
     box-sizing: border-box;
+}
+
+.about-image-boxes {
+    max-width: 800px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+    padding: 30px;
+    border: 1px solid white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.image-boxes img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* maintain aspect ratio, contain inside box */
+    display: block;
 }
 
 
 .mySlides {
-    display: flex;
+    display: none;
     width: 100%;
     height: 100%;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    text-align: center;
 }
 
 /* Next & previous buttons */
 .prev, .next {
-    cursor: pointer;
     position: absolute;
     top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
+    transform: translateY(-50%);
     color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
+    font-size: 2rem;
+    padding: 8px 14px;
+    border-radius: 50%;
+    cursor: pointer;
     user-select: none;
+    z-index: 10;
+    transition: background-color 0.3s;
     background-color: dimgray;
     opacity: 0.5;
 }
