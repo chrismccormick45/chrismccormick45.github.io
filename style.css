@@ -189,39 +189,33 @@ a:visited {
 /*****                   About Section Functions                   *****/
 /***********************************************************************/
 
-
 .education-card {
-    background: linear-gradient(135deg, #0a2540, #112e58);
-    padding: 2rem;
-    border-radius: 10px;
+    background: linear-gradient(135deg, transparent, #2774AE, #1E4F7A);
+    padding: 2.2rem;
+    border-radius: 12px;
     text-align: center;
     box-shadow: inset 0 0 10px rgba(255,255,255,0.1);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .college-logo img {
-    max-width: 100px;
+    max-width: 250px;
     margin: 0 auto 1rem;
     display: block;
-    filter: drop-shadow(0 0 3px #66ccff);
-    transition: transform 0.3s ease;
-}
-
-.college-logo img:hover {
-    transform: scale(1.1);
+    filter: drop-shadow(0 0 4px #66ccff);
 }
 
 .college-name a {
     font-family: 'Times New Roman', serif;
-    font-size: 1.5rem;
+    font-size: 1.55rem;
     color: white;
-    transition: color 0.3s ease;
 }
 
-.college-name a:hover {
-    text-decoration: underline;
-}
+    .college-name a:hover {
+        text-decoration: underline;
+    }
 
+/* Degree layout */
 .degree-info {
     display: flex;
     justify-content: center;
@@ -231,11 +225,11 @@ a:visited {
 }
 
 .degree {
-    max-width: 250px;
+    max-width: 260px;
     background: rgba(255, 255, 255, 0.1);
-    padding: 1rem 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    padding: 1.2rem 1.6rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
     transition: background 0.3s ease;
 }
 
@@ -243,45 +237,74 @@ a:visited {
     background: rgba(255, 255, 255, 0.15);
 }
 
+/* Uniform vertical spacing */
+.degree-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    text-decoration: none;
+}
+
+/* Typography */
+.degree-title {
+    font-size: 1rem;
+    line-height: 1.3;
+}
+
 .degree-type {
     font-style: italic;
     font-weight: 600;
     font-size: 1.1rem;
-    color: #66ccff;
+    color: #FFD700; /* gold for readability */
 }
 
 .degree-date {
-    margin-top: 0.5rem;
+    margin-top: -0.5rem;
     font-size: 0.9rem;
     color: #ccc;
 }
 
+.degree-honor {
+    font-size: 0.9rem;
+    color: white;
+    text-decoration: underline;
+}
+
 .degree-date strong {
-    font-weight: 700;
     color: #fff;
 }
 
-/* Setting parameters for block headings */
-.headings {
-    padding-left: 40px;
-    padding-top: 35%;
-    text-decoration: underline;
+/* Thesis */
+.thesis {
+    margin-top: 0.6rem;
 }
 
-/* Block content padding */
-.content-padding {
-    margin-left: 50px;
-    margin-right: 50px;
-}
-
-.conference-talks {
-    font-family: "Times New Roman", Times, serif;
-    font-size: 1.4rem;
+.thesis-label {
     text-decoration: underline;
+    font-weight: 500;
+    margin-right: 0.2rem;
     color: white;
-    margin-bottom: 1rem;
 }
 
+/* Divider */
+.divider {
+    height: 1px;
+    background: linear-gradient(to right, transparent, #FFD700, transparent); /* gold divider */
+    margin: 2.5rem 0 0.5rem;
+}
+
+/* Conference */
+.conference-talks {
+    font-size: 1.4rem;
+    color: white;
+    margin-bottom: 0.8rem;
+}
+
+.conference-entry {
+    font-size: 0.95rem;
+    color: #ddd;
+    line-height: 1.5;
+}
 
 /***********************************************************************/
 /*****                    Experience Functions                    *****/
@@ -329,7 +352,8 @@ a:visited {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid white;
+    background-color: rgba(0, 0, 0, 0.7);
     border-radius: 12px;
     padding: 1.5rem 1rem 2rem;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
