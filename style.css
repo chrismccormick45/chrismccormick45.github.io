@@ -205,8 +205,7 @@ a:visited {
     filter: drop-shadow(0 0 4px #66ccff);
 }
 
-.college-name a {
-    font-family: 'Times New Roman', serif;
+.college-name a{
     font-size: 1.55rem;
     color: white;
 }
