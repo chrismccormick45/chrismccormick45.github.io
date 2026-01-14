@@ -229,12 +229,16 @@ a:visited {
     padding: 1.2rem 1.6rem;
     border-radius: 10px;
     box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
-    transition: background 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .degree:hover {
-    background: rgba(255, 255, 255, 0.15);
-}
+        background: rgba(255, 255, 255, 0.15);
+        transform: translateY(-8px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+ }
 
 /* Uniform vertical spacing */
 .degree-content {
