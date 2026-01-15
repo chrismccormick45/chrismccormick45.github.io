@@ -13,7 +13,7 @@ html {
     background-attachment: fixed;
     color: white;
     scroll-behavior: smooth;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
 }
 
 /* Making links appear white in color */
@@ -232,11 +232,11 @@ a:visited {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-    .degree:hover {
+.degree:hover {
         background: rgba(255, 255, 255, 0.15);
         transform: translateY(-8px);
         box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
-    }
+}
 
 /* Uniform vertical spacing */
 .degree-content {
@@ -611,9 +611,9 @@ a:visited {
     left: 0;
 }
 
-    .prev:hover, .next:hover {
+.prev:hover, .next:hover {
         background-color: black;
-    }
+}
 
 /* The dots/bullets/indicators */
 .dot {
